@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>CRDA Event Calendar</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/calendar.css">
+	<link rel="stylesheet" type="text/css" href="css/custom_2.css" />
+	<script src="./scripts/modernizr.custom.63321.js"></script>
+</head>
+
+<body>
+	<header>
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <h1 class="site-title">
+                    <a class="navbar-brand" aria-label="Site Logo" href="index.html">
+                        <picture>
+                            <img src="http://via.placeholder.com/170x50" alt="Site Logo">
+                        </picture>
+                    </a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuburger"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuburger">
+                    <ul class="navbar-list navbar-nav ml-auto text-center text-uppercase">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Головна</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Послуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="calendar.html">Календар подій</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Звіти</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donation.html">Підтримати проект</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts row">
+                    <ul class="col-12 d-flex text-center text-md-left">
+                        <li>
+                            <p>Наш номер: <a href="tel:+380631231231">+380631231231</a></p>
+                        </li>
+                        <br>
+                        <li>
+                            <p>Наш email: <a href="mailto:info@info.ua">info@info.ua</a></p>
+                        </li>
+                        <li>
+                            <ul class="languages text-center">
+                                <li><a href="#"><img src="./img/flag.png" alt=""></a></li>
+                                <li><a href="#" class="active"><img src="./img/ukraine.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/russia.png" alt=""></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+	<section class="main">
+		<div class="container">
+			<h2>Календар подій</h2>
+			<div class="custom-calendar-wrap">
+				<div id="custom-inner" class="custom-inner">
+					<div class="custom-header">
+						<nav>
+							<span id="custom-prev" class="custom-prev"></span>
+							<span id="custom-next" class="custom-next"></span>
+						</nav>
+						<h2 id="custom-month" class="custom-month"></h2>
+						<h3 id="custom-year" class="custom-year"></h3>
+					</div>
+					<div id="calendar" class="fc-calendar-container"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+        <div class="container">
+            <div class="footer-wrapper row d-flex">
+                <div class="col-md-4 mt-2 text-center text-md-left d-block">
+                    <a aria-label="Site Logo" href="index.html">
+                        <picture>
+                            <img src="http://via.placeholder.com/170x50" alt="Site Logo">
+                        </picture>
+                    </a>
+                </div>
+                <div class="col footer-menu-box">
+                    <nav class="footer-nav">
+                        <ul class="footer-menu  row">
+                            <li class="nav-item text-center mt-3 ml-3"><a href="index.html">Головна</a></li>
+                            <li class="nav-item text-center mt-3 ml-3"><a href="services.html">Послуги</a></li>
+                            <li class="nav-item text-center mt-3 ml-3"><a href="calendar.html">Календар подій</a></li>
+                            <li class="nav-item text-center mt-3 ml-3"><a href="#">Звіти</a></li>
+                            <li class="nav-item text-center mt-3 ml-3"><a href="donation.html">Підтримати проект</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-4 contacts mt-3">
+                    <ul class="d-flex text-center text-md-left">
+                        <li class="ml-1">
+                            <p>Наш номер: <a href="tel:+380631231231">+380631231231</a></p>
+                        </li>
+                        <li class="ml-1"> 
+                            <p>Наш email: <a href="mailto:info@info.ua">info@info.ua</a></p>
+                        </li>
+                        <li class="ml-1">
+                            <ul class="languages text-center d-flex col">
+                                <li class="ml-1"><a href="#"><img src="./img/flag.png" alt=""></a></li>
+                                <li class="ml-1"><a href="#" class="active"><img src="./img/ukraine.png" alt=""></a></li>
+                                <li class="ml-1"><a href="#"><img src="./img/russia.png" alt=""></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p>Створено: команда Geekhub</p>    
+        </div>
+    </footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/03c68ce9ed.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./scripts/jquery.calendario.js"></script>
+	<script type="text/javascript" src="./scripts/data.js"></script>
+	<script type="text/javascript">
+		$(function () {
+
+			var transEndEventNames = {
+					'WebkitTransition': 'webkitTransitionEnd',
+					'MozTransition': 'transitionend',
+					'OTransition': 'oTransitionEnd',
+					'msTransition': 'MSTransitionEnd',
+					'transition': 'transitionend'
+				},
+				transEndEventName = transEndEventNames[Modernizr.prefixed('transition')],
+				$wrapper = $('#custom-inner'),
+				$calendar = $('#calendar'),
+				cal = $calendar.calendario({
+					onDayClick: function ($el, $contentEl, dateProperties) {
+
+						if ($contentEl.length > 0) {
+							showEvents($contentEl, dateProperties);
+						}
+
+					},
+					caldata: codropsEvents,
+					displayWeekAbbr: true
+				}),
+				$month = $('#custom-month').html(cal.getMonthName()),
+				$year = $('#custom-year').html(cal.getYear());
+
+			$('#custom-next').on('click', function () {
+				cal.gotoNextMonth(updateMonthYear);
+			});
+			$('#custom-prev').on('click', function () {
+				cal.gotoPreviousMonth(updateMonthYear);
+			});
+
+			function updateMonthYear() {
+				$month.html(cal.getMonthName());
+				$year.html(cal.getYear());
+			}
+
+			// just an example..
+			function showEvents($contentEl, dateProperties) {
+
+				hideEvents();
+
+				var $events = $('<div id="custom-content-reveal" class="custom-content-reveal"><h4>Events for ' +
+						dateProperties.monthname + ' ' + dateProperties.day + ', ' + dateProperties.year +
+						'</h4></div>'),
+					$close = $('<span class="custom-content-close"></span>').on('click', hideEvents);
+
+				$events.append($contentEl.html(), $close).insertAfter($wrapper);
+
+				setTimeout(function () {
+					$events.css('top', '0%');
+				}, 25);
+
+			}
+
+			function hideEvents() {
+
+				var $events = $('#custom-content-reveal');
+				if ($events.length > 0) {
+
+					$events.css('top', '100%');
+					Modernizr.csstransitions ? $events.on(transEndEventName, function () {
+						$(this).remove();
+					}) : $events.remove();
+
+				}
+
+			}
+
+		});
+	</script>
+</body>
+
+</html>
