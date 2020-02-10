@@ -1,0 +1,14 @@
+/* Font: Montserrat Regular*/
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url("../fonts/Montserrat_Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}     
+/* Font: DINPro */
+@font-face {
+    font-family: "DINPror";
+    src: url("../fonts/DINPro.otf");
+    font-weight: normal;
+    font-style: normal;
+}

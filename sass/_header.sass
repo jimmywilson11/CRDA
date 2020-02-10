@@ -1,0 +1,33 @@
+header
+    background-color: $main-color
+    .navbar-collapse   
+        .navbar-list
+            .nav-item      
+                padding: 0 10px
+                border-bottom: 5px solid transparent
+                &:hover
+                    border-top: 2px solid $white
+                    color: $white
+                    border-bottom: 2px solid $white
+                    .nav-link
+                        color: $white               
+                .nav-link
+                    color: $black  
+                    font: 700 14px $main-font
+                    opacity: .8                         
+            .active
+                border-top: 5px solid $white
+                border-bottom: 5px solid $white
+                .nav-link
+                    color: $white 
+               
+    .contacts
+        .contact-item
+            a
+                text-decoration: none
+                color: $dirty-white
+                font: 600 18px $second-font
+                opacity: .8
+                &:hover
+                    opacity: 1
+                    color: $white

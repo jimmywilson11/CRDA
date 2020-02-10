@@ -1,0 +1,230 @@
+@import url(../css/fonts.css);
+header {
+  background-color: #85241E;
+}
+
+header .navbar-collapse .navbar-list .nav-item {
+  padding: 0 10px;
+  border-bottom: 5px solid transparent;
+}
+
+header .navbar-collapse .navbar-list .nav-item:hover {
+  border-top: 2px solid #FFF;
+  color: #FFF;
+  border-bottom: 2px solid #FFF;
+}
+
+header .navbar-collapse .navbar-list .nav-item:hover .nav-link {
+  color: #FFF;
+}
+
+header .navbar-collapse .navbar-list .nav-item .nav-link {
+  color: #000;
+  font: 700 14px Montserrat Regular, sans-serif;
+  opacity: .8;
+}
+
+header .navbar-collapse .navbar-list .active {
+  border-top: 5px solid #FFF;
+  border-bottom: 5px solid #FFF;
+}
+
+header .navbar-collapse .navbar-list .active .nav-link {
+  color: #FFF;
+}
+
+header .contacts .contact-item a {
+  text-decoration: none;
+  color: #FFDEDC;
+  font: 600 18px Din Pro, sans-serif;
+  opacity: .8;
+}
+
+header .contacts .contact-item a:hover {
+  opacity: 1;
+  color: #FFF;
+}
+
+footer {
+  background-color: #3A2F2F;
+}
+
+footer .contacts .contact-item i {
+  color: #FFDEDC;
+  font-size: 20px;
+}
+
+footer .contacts .contact-item a {
+  text-decoration: none;
+  color: #FFDEDC;
+  font: 600 14px Din Pro, sans-serif;
+  opacity: .8;
+}
+
+footer .contacts .contact-item a:hover {
+  opacity: 1;
+}
+
+footer .color-wrapper {
+  color: #FFF;
+  background-color: #423838;
+}
+
+footer .color-wrapper p {
+  font: 600 18px Montserrat Regular, sans-serif;
+}
+
+footer .color-wrapper a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+footer .color-wrapper a img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+h2 {
+  display: block;
+  background-color: #FFDEDC;
+  padding: 5px 0 5px 40px;
+  border-left: 5px solid #85241E;
+  font: 600 1.2rem Montserrat Regular, sans-serif;
+  line-height: 42px;
+  letter-spacing: 0.3em;
+}
+
+#project-description {
+  background-image: url(../img/section_1_bg.png);
+  padding: 0 0 30px 0;
+}
+
+#project-description h3 {
+  font: 600 2.5rem Montserrat Regular, sans-serif;
+  padding: 0 0 16px 0;
+}
+
+#project-description p {
+  font: 400 1.5rem Din Pro, sans-serif;
+  padding: 0 0 40px 0;
+}
+
+#project-description .button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 40px;
+  font: 600 1.2rem Montserrat Regular, sans-serif;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #FFF;
+  background-color: #FF8982;
+  opacity: .8;
+  border-radius: 0;
+}
+
+#project-description .button:hover {
+  color: #85241E;
+  border: 2px solid #85241E;
+  background-color: #FFF;
+}
+
+#project-description .button:active {
+  color: #FFF;
+  background-color: #85241E;
+  opacity: .8;
+}
+
+#our-mission .mission-list {
+  padding: 30px 0;
+}
+
+#our-mission .mission-list .mission-item {
+  position: relative;
+  background-color: #F8F8F8;
+  -webkit-box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
+}
+
+#our-mission .mission-list .mission-item .open-more-1, #our-mission .mission-list .mission-item .open-more-2, #our-mission .mission-list .mission-item .open-more-3 {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+#our-mission .mission-list .mission-item .open-more-1::after, #our-mission .mission-list .mission-item .open-more-2::after, #our-mission .mission-list .mission-item .open-more-3::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #FFDEDC;
+  top: 0;
+  left: 45%;
+  bottom: 0;
+  right: 0;
+}
+
+#our-mission .mission-list .mission-item .open-more-1:hover::after, #our-mission .mission-list .mission-item .open-more-2:hover::after, #our-mission .mission-list .mission-item .open-more-3:hover::after {
+  border: 10px solid transparent;
+  border-top: 10px solid #FFDEDC;
+}
+
+#our-mission .mission-list .mission-item .open-more-1:active::after, #our-mission .mission-list .mission-item .open-more-2:active::after, #our-mission .mission-list .mission-item .open-more-3:active::after {
+  top: 0;
+  left: 45%;
+  bottom: 0;
+  right: 0;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #BBBBBB;
+}
+
+#our-team h3 {
+  font: 500 23px Montserrat Regular, sans-serif;
+  line-height: 32px;
+}
+
+#our-team p {
+  font: 400 16px Din Pro, sans-serif;
+  line-height: 34px;
+}
+
+#our-team .team-list .teammate {
+  margin: 0 0 20px 0;
+}
+
+#our-direction {
+  background-color: #ECECEC;
+}
+
+#our-direction .card-deck .card {
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#our-direction .card-deck .card .card-header {
+  padding: 0;
+  margin: 0;
+}
+
+#our-direction .card-deck .card .card-body {
+  padding: 0;
+  margin: 0;
+  background-color: #FFF;
+}
+
+#our-direction .card-deck .card .card-body .card-title {
+  padding: 24px 32px 0 32px;
+  font: 600 1.4rem Montserrat Regular, sans-serif;
+  line-height: 32px;
+  margin: 0;
+}
+
+#our-direction .card-deck .card .card-body .card-text {
+  padding: 16px 32px;
+  font: 400 0.85rem Din Pro, sans-serif;
+  line-height: 1.5rem;
+}

@@ -1,0 +1,100 @@
+@import url(../css/fonts.css);
+header {
+  background-color: #85241E;
+}
+
+header .navbar-collapse .navbar-list .nav-item {
+  padding: 0 10px;
+  border-bottom: 5px solid transparent;
+}
+
+header .navbar-collapse .navbar-list .nav-item:hover {
+  border-top: 2px solid #FFF;
+  color: #FFF;
+  border-bottom: 2px solid #FFF;
+}
+
+header .navbar-collapse .navbar-list .nav-item:hover .nav-link {
+  color: #FFF;
+}
+
+header .navbar-collapse .navbar-list .nav-item .nav-link {
+  color: #000;
+  font: 700 14px Montserrat Regular, sans-serif;
+  opacity: .8;
+}
+
+header .navbar-collapse .navbar-list .active {
+  border-top: 5px solid #FFF;
+  border-bottom: 5px solid #FFF;
+}
+
+header .navbar-collapse .navbar-list .active .nav-link {
+  color: #FFF;
+}
+
+header .contacts .contact-item a {
+  text-decoration: none;
+  color: #FFDEDC;
+  font: 600 18px Din Pro, sans-serif;
+  opacity: .8;
+}
+
+header .contacts .contact-item a:hover {
+  opacity: 1;
+  color: #FFF;
+}
+
+footer {
+  background-color: #3A2F2F;
+}
+
+footer .contacts .contact-item i {
+  color: #FFDEDC;
+  font-size: 20px;
+}
+
+footer .contacts .contact-item a {
+  text-decoration: none;
+  color: #FFDEDC;
+  font: 600 14px Din Pro, sans-serif;
+  opacity: .8;
+}
+
+footer .contacts .contact-item a:hover {
+  opacity: 1;
+}
+
+footer .color-wrapper {
+  color: #FFF;
+  background-color: #423838;
+}
+
+footer .color-wrapper p {
+  font: 600 18px Montserrat Regular, sans-serif;
+}
+
+footer .color-wrapper a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+footer .color-wrapper a img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+h2 {
+  display: block;
+  background-color: #FFDEDC;
+  padding: 5px 0 5px 40px;
+  border-left: 5px solid #85241E;
+  font: 600 1.2rem Montserrat Regular, sans-serif;
+  line-height: 42px;
+  letter-spacing: 0.3em;
+}
