@@ -3,44 +3,62 @@ header {
   background-color: #85241E;
 }
 
-header .navbar-collapse .navbar-list .nav-item {
+.navbar {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  padding: 0;
+}
+
+.navbar .site-title-head {
+  font: 500 1.125rem Montserrat Regular, sans-serif;
+  line-height: 22px;
+}
+
+.navbar .navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.navbar .navbar-collapse .navbar-list .nav-item {
   padding: 0 10px;
   border-bottom: 5px solid transparent;
 }
 
-header .navbar-collapse .navbar-list .nav-item:hover {
+.navbar .navbar-collapse .navbar-list .nav-item:hover {
   border-top: 2px solid #FFF;
   color: #FFF;
   border-bottom: 2px solid #FFF;
 }
 
-header .navbar-collapse .navbar-list .nav-item:hover .nav-link {
+.navbar .navbar-collapse .navbar-list .nav-item:hover .nav-link {
   color: #FFF;
 }
 
-header .navbar-collapse .navbar-list .nav-item .nav-link {
+.navbar .navbar-collapse .navbar-list .nav-item .nav-link {
   color: #000;
-  font: 700 14px Montserrat Regular, sans-serif;
+  font: 500 1.125rem Montserrat Regular, sans-serif;
   opacity: .8;
 }
 
-header .navbar-collapse .navbar-list .active {
+.navbar .navbar-collapse .navbar-list .active {
   border-top: 5px solid #FFF;
   border-bottom: 5px solid #FFF;
 }
 
-header .navbar-collapse .navbar-list .active .nav-link {
+.navbar .navbar-collapse .navbar-list .active .nav-link {
   color: #FFF;
 }
 
-header .contacts .contact-item a {
+.navbar .contacts .contact-item a {
   text-decoration: none;
   color: #FFDEDC;
-  font: 600 18px Din Pro, sans-serif;
+  font: 600 0.8125rem Open Sans Regular, sans-serif;
   opacity: .8;
 }
 
-header .contacts .contact-item a:hover {
+.navbar .contacts .contact-item a:hover {
   opacity: 1;
   color: #FFF;
 }
@@ -57,7 +75,7 @@ footer .contacts .contact-item i {
 footer .contacts .contact-item a {
   text-decoration: none;
   color: #FFDEDC;
-  font: 600 14px Din Pro, sans-serif;
+  font: 600 14px Open Sans Regular, sans-serif;
   opacity: .8;
 }
 
@@ -85,7 +103,7 @@ footer .color-wrapper a img {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -94,7 +112,7 @@ h2 {
   background-color: #FFDEDC;
   padding: 5px 0 5px 40px;
   border-left: 5px solid #85241E;
-  font: 600 1.2rem Montserrat Regular, sans-serif;
+  font: 600 1.875rem Montserrat Regular, sans-serif;
   line-height: 42px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.03em;
 }

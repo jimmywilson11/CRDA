@@ -1,6 +1,13 @@
 header
     background-color: $main-color
-    .navbar-collapse   
+.navbar
+    flex-grow: 0
+    padding: 0
+    .site-title-head
+        font: 500 1.125rem $main-font
+        line-height: 22px
+    .navbar-collapse
+        flex-grow: 0 
         .navbar-list
             .nav-item      
                 padding: 0 10px
@@ -13,20 +20,19 @@ header
                         color: $white               
                 .nav-link
                     color: $black  
-                    font: 700 14px $main-font
+                    font: 500 1.125rem $main-font
                     opacity: .8                         
             .active
                 border-top: 5px solid $white
                 border-bottom: 5px solid $white
                 .nav-link
-                    color: $white 
-               
+                    color: $white             
     .contacts
         .contact-item
             a
                 text-decoration: none
                 color: $dirty-white
-                font: 600 18px $second-font
+                font: 600 0.8125rem $second-font
                 opacity: .8
                 &:hover
                     opacity: 1
