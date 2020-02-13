@@ -90,6 +90,7 @@ footer .color-wrapper {
 
 footer .color-wrapper p {
   font: 600 18px Montserrat Regular, sans-serif;
+  margin: 0;
 }
 
 footer .color-wrapper a {
@@ -115,4 +116,178 @@ h2 {
   font: 600 1.875rem Montserrat Regular, sans-serif;
   line-height: 42px;
   letter-spacing: 0.03em;
+}
+
+#main {
+  padding: 5% 0;
+}
+
+#main .business, #main .goverment, #main .activists {
+  padding: 3% 0 0 0;
+  margin: 2% 0;
+  background-color: #F7F7F7;
+}
+
+#main .business .business-contact, #main .goverment .business-contact, #main .activists .business-contact {
+  -webkit-box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
+  padding: 0 3% 0 0;
+  height: 90%;
+}
+
+#main .business .business-contact .modal-dialog, #main .goverment .business-contact .modal-dialog, #main .activists .business-contact .modal-dialog {
+  top: 30%;
+}
+
+#main .business .business-contact .feedback-form, #main .goverment .business-contact .feedback-form, #main .activists .business-contact .feedback-form {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+#main .business .business-contact .feedback-form .comment-label, #main .goverment .business-contact .feedback-form .comment-label, #main .activists .business-contact .feedback-form .comment-label {
+  font: 400 0.75rem Open Sans Regular, sans-serif;
+  color: #039BE5;
+  padding: 3% 0 0 11%;
+}
+
+#main .business .business-contact .feedback-form .name, #main .goverment .business-contact .feedback-form .name, #main .activists .business-contact .feedback-form .name {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 2px solid #000;
+  padding: 2px 5px;
+  font: 300 0.9375rem Montserrat Regular, sans-serif;
+}
+
+#main .business .business-contact .feedback-form .name:hover, #main .goverment .business-contact .feedback-form .name:hover, #main .activists .business-contact .feedback-form .name:hover {
+  border-bottom: 2px solid #039BE5;
+}
+
+#main .business .business-contact .feedback-form .email, #main .goverment .business-contact .feedback-form .email, #main .activists .business-contact .feedback-form .email {
+  width: 80%;
+  margin: 0 auto;
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 2px solid #000;
+  padding: 2px 5px;
+  font: 300 0.9375rem Montserrat Regular, sans-serif;
+}
+
+#main .business .business-contact .feedback-form .email:hover, #main .goverment .business-contact .feedback-form .email:hover, #main .activists .business-contact .feedback-form .email:hover {
+  border-bottom: 2px solid #039BE5;
+}
+
+#main .business .business-contact .feedback-form #comment, #main .goverment .business-contact .feedback-form #comment, #main .activists .business-contact .feedback-form #comment {
+  padding: 0 5px 0 0;
+  margin: 0 auto;
+  resize: none;
+  width: 80%;
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 2px solid #000;
+  font: 300 0.9375rem Montserrat Regular, sans-serif;
+}
+
+#main .business .business-contact .feedback-form #comment:hover, #main .goverment .business-contact .feedback-form #comment:hover, #main .activists .business-contact .feedback-form #comment:hover {
+  border-bottom: 2px solid #039BE5;
+}
+
+#main .business .business-contact .feedback-form .current, #main .goverment .business-contact .feedback-form .current, #main .activists .business-contact .feedback-form .current {
+  position: relative;
+  float: right;
+  left: -10%;
+  font: 300 0.9375rem Open Sans Regular, sans-serif;
+  color: #039BE5;
+}
+
+#main .business .business-contact .submit-btn, #main .goverment .business-contact .submit-btn, #main .activists .business-contact .submit-btn {
+  position: relative;
+  display: inline;
+  margin: 0 auto;
+  font: 500 1rem Open Sans Regular, sans-serif;
+  text-transform: uppercase;
+  padding: 1% 10%;
+  color: #FFF;
+  background-color: #E8625A;
+  border-style: none;
+  border: 2px solid transparent;
+}
+
+#main .business .business-contact .submit-btn:hover, #main .goverment .business-contact .submit-btn:hover, #main .activists .business-contact .submit-btn:hover {
+  background-color: transparent;
+  color: #E8625A;
+  border: 2px solid #E8625A;
+}
+
+#main .business .business-contact .close-btn, #main .goverment .business-contact .close-btn, #main .activists .business-contact .close-btn {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  border-style: none;
+  padding: 3%;
+  color: #85241E;
+}
+
+#main .business .business-contact .modal-head-block, #main .goverment .business-contact .modal-head-block, #main .activists .business-contact .modal-head-block {
+  font: 500 1.4375rem Montserrat Regular, sans-serif;
+  padding: 3% 2%;
+}
+
+#main .business .business-contact .business-head-block, #main .goverment .business-contact .business-head-block, #main .activists .business-contact .business-head-block {
+  padding: 2% 0 2% 10%;
+  display: block;
+  font: 500 1.875rem Montserrat Regular, sans-serif;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #85241E;
+  background-color: #E7D3D2;
+}
+
+#main .business .business-contact p, #main .goverment .business-contact p, #main .activists .business-contact p {
+  font: 400 1rem Open Sans Regular, sans-serif;
+  line-height: 34px;
+  text-indent: 16px;
+  padding: 5% 0 5% 10%;
+  text-align: justify;
+}
+
+#main .business .business-contact .modal-btn, #main .goverment .business-contact .modal-btn, #main .activists .business-contact .modal-btn {
+  display: inline-block;
+  margin-left: 10%;
+  font: 600 1rem Open Sans Regular, sans-serif;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  color: #FFF;
+  background-color: #E8625A;
+  border: 2px solid transparent;
+}
+
+#main .business .business-contact .modal-btn:hover, #main .goverment .business-contact .modal-btn:hover, #main .activists .business-contact .modal-btn:hover {
+  background-color: transparent;
+  color: #E8625A;
+  border: 2px solid #E8625A;
+}
+
+#main .business .service-description .service-description-head, #main .goverment .service-description .service-description-head, #main .activists .service-description .service-description-head {
+  font: 500 1.4375rem Montserrat Regular, sans-serif;
+  padding: 2% 5%;
+}
+
+#main .business .service-description p, #main .goverment .service-description p, #main .activists .service-description p {
+  font: 400 1rem Open Sans Regular, sans-serif;
+  line-height: 34px;
+  text-indent: 1rem;
+}
+
+#main .business .sercive-picture, #main .goverment .sercive-picture, #main .activists .sercive-picture {
+  padding-left: 0;
 }

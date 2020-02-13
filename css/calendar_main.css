@@ -90,6 +90,7 @@ footer .color-wrapper {
 
 footer .color-wrapper p {
   font: 600 18px Montserrat Regular, sans-serif;
+  margin: 0;
 }
 
 footer .color-wrapper a {
@@ -115,4 +116,8 @@ h2 {
   font: 600 1.875rem Montserrat Regular, sans-serif;
   line-height: 42px;
   letter-spacing: 0.03em;
+}
+
+#main {
+  padding: 5% 0;
 }

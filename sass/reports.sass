@@ -3,3 +3,37 @@
 @import _header.sass
 @import _footer.sass
 @import _mixins.sass
+#main
+    padding: 5% 0
+    .report-title-head, h4
+        font: 500 1.4375rem $main-font
+        line-height: 32px
+    .card
+        border: none
+        padding: 5%
+        background-color: $bgc
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15)
+        position: relative
+        .report-item
+            font: 400 1rem $second-font
+            line-height: 34px
+            position: relative
+            padding-left: 25px
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                margin-top: 6px
+                height: 20px 
+                width: 20px
+                background-image: url('../img/vector.png')
+                background-size: contain
+                background-repeat: no-repeat
+                left: 0
+        .download-btn
+            position: absolute
+            display: block
+            top: 35% 
+            left: 65%
+            right: 
+            bottom: 0

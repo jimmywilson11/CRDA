@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="css/services.css">
-    <title>CRDA Services</title>
+    <title>RDA Cherkasy - Послуги</title>
 </head>
 
 <body>
@@ -85,101 +85,185 @@
         </div>
     </header>
     <section id="main">
+        <h2 class="offset-md-2 text-left">Послуги</h2>
         <div class="container">
-            <h2>Послуги</h2>
-            <div class="business row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <h3 class="text-center">Для бізнесу</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sapiente ullam mollitia
-                            culpa alias numquam sed quibusdam? Quis ipsa vel voluptatum molestiae delectus incidunt
-                            sunt, optio ducimus sed cum ullam magnam! Corrupti, doloribus nam tempora atque quos nulla
-                            inventore facere iusto qui! Quibusdam voluptate nulla aut itaque provident dicta
-                            repudiandae!</p>
-                        <a href="#" class="text-center">Дізнатися більше</a>
+            <div class="business row justify-content-between">
+                <div class="col-md-4 business-contact">
+                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content mb-0 p-0">
+                                <h3 class="modal-head-block text-center">Зв'язатися з нами</h3>
+                                <form action="#" method="POST" class="feedback-form">
+                                    <label for="name"></label>
+                                    <input id="name" class="name" type="text" placeholder="Імя" required>
+                                    <label for="email"></label>
+                                    <input id="email" class="email" type="email" placeholder="Електронна адреса" required>
+                                    <label class="comment-label" for="comment">Ваш коментар</label>
+                                    <textarea name="comment" id="comment" cols="30" rows="8"
+                                        maxlength="300" required></textarea>
+                                    <div id="the-count">
+                                        <span class="current" id="current">0</span>
+                                    </div>
+                                </form>
+                                <input type="submit" value="Надіслати" class="submit-btn mt-2 mb-3">
+                                <button type="button" class="close-btn fas fa-times" data-dismiss="modal"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="business-head-block text-center text-md-left mt-4">Для бізнесу</h4>
+                    <p class="mr-4 mr-md-0">Але при деяких обставинах – або на вимогу боргу, або в силу якоїсь необхідності часто доводиться
+                        забувати про насолоди і не втікати від тягарів. Але при деяких обставинах – або на вимогу боргу,
+                        або в силу якоїсь необхідності часто доводиться забувати про насолоди і не втікати від тягарів.
+                        Але щоб ви зрозуміли, звідки часто доводиться забувати про насолоди і не втікати від тягарів.
+                    </p>
+                    <a data-toggle="modal" data-target="#modal1" class="modal-btn text-center mb-4">Зв'язатися з нами</a>
+                </div>
+                <div class="service-description col-md-6 mt-3">
+                    <h3 class="service-description-head">Описання</h3>
+                    <div class="description">
+                        <p>
+                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
+                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
+                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
+                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
+                        </p>
+                        <p>
+                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
+                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
+                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
+                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
+                        </p>
+                        <p>
+                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
+                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
+                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
+                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>Описання</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem aliquam possimus
-                        fugit eum neque voluptas repellat assumenda hic distinctio numquam beatae non molestiae enim
-                        corporis dicta quisquam, adipisci animi rem voluptatum modi minus inventore, officia magni? Unde
-                        laboriosam laborum, obcaecati ex ea quidem voluptatem asperiores! Inventore corrupti ipsam quasi
-                        provident esse iure quidem beatae, pariatur, accusantium nisi neque nam assumenda veritatis
-                        earum culpa soluta in perferendis placeat, quis fugit voluptates recusandae ut! Voluptatem harum
-                        fugit architecto in est. Sint hic, veritatis quam quis blanditiis illo tempora ad magni, id nisi
-                        aliquid voluptatibus minima itaque omnis ab maiores esse beatae.</p>
-                </div>
-                <div class="col-md-4">
+                <div class="sercive-picture col-md-2 text-center text-md-left">
                     <picture>
-                        <img class="img-fluid" src="http://via.placeholder.com/510x360" alt="">
-                    </picture>
-                    <picture>
-                        <img class="img-fluid" src="http://via.placeholder.com/510x360" alt="">
+                        <img src="./img/service_pic.png" alt="">
                     </picture>
                 </div>
             </div>
-            <div class="goverment row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <h3 class="text-center">Для влади</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sapiente ullam mollitia
-                            culpa alias numquam sed quibusdam? Quis ipsa vel voluptatum molestiae delectus incidunt
-                            sunt, optio ducimus sed cum ullam magnam! Corrupti, doloribus nam tempora atque quos nulla
-                            inventore facere iusto qui! Quibusdam voluptate nulla aut itaque provident dicta
-                            repudiandae!</p>
-                        <a href="#" class="text-center">Дізнатися більше</a>
+            <div class="goverment row justify-content-between">
+                <div class="col-md-4 business-contact">
+                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content mb-0 p-0">
+                                <h3 class="modal-head-block text-center">Зв'язатися з нами</h3>
+                                <form action="#" method="POST" class="feedback-form">
+                                    <label for="name"></label>
+                                    <input id="name" class="name" type="text" placeholder="Імя" required>
+                                    <label for="email"></label>
+                                    <input id="email" class="email" type="email" placeholder="Електронна адреса" required>
+                                    <label class="comment-label" for="comment">Ваш коментар</label>
+                                    <textarea name="comment" id="comment" cols="30" rows="8"
+                                        maxlength="300" required></textarea>
+                                    <div id="the-count">
+                                        <span class="current" id="current">0</span>
+                                    </div>
+                                </form>
+                                <input type="submit" value="Надіслати" class="submit-btn mt-2 mb-3">
+                                <button type="button" class="close-btn fas fa-times" data-dismiss="modal"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="business-head-block text-center text-md-left mt-4">Для влади</h4>
+                    <p class="mr-4 mr-md-0">Але при деяких обставинах – або на вимогу боргу, або в силу якоїсь необхідності часто доводиться
+                        забувати про насолоди і не втікати від тягарів. Але при деяких обставинах – або на вимогу боргу,
+                        або в силу якоїсь необхідності часто доводиться забувати про насолоди і не втікати від тягарів.
+                        Але щоб ви зрозуміли, звідки часто доводиться забувати про насолоди і не втікати від тягарів.
+                    </p>
+                    <a data-toggle="modal" data-target="#modal2" class="modal-btn text-center mb-4">Зв'язатися з нами</a>
+                </div>
+                <div class="service-description col-md-6 mt-3">
+                    <h3 class="service-description-head">Описання</h3>
+                    <div class="description">
+                        <p>
+                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
+                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
+                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
+                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
+                        </p>
+                        <p>
+                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
+                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
+                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
+                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
+                        </p>
+                        <p>
+                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
+                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
+                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
+                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>Описання</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem aliquam possimus
-                        fugit eum neque voluptas repellat assumenda hic distinctio numquam beatae non molestiae enim
-                        corporis dicta quisquam, adipisci animi rem voluptatum modi minus inventore, officia magni? Unde
-                        laboriosam laborum, obcaecati ex ea quidem voluptatem asperiores! Inventore corrupti ipsam quasi
-                        provident esse iure quidem beatae, pariatur, accusantium nisi neque nam assumenda veritatis
-                        earum culpa soluta in perferendis placeat, quis fugit voluptates recusandae ut! Voluptatem harum
-                        fugit architecto in est. Sint hic, veritatis quam quis blanditiis illo tempora ad magni, id nisi
-                        aliquid voluptatibus minima itaque omnis ab maiores esse beatae.</p>
-                </div>
-                <div class="col-md-4">
+                <div class="sercive-picture col-md-2 text-center text-md-left">
                     <picture>
-                        <img class="img-fluid" src="http://via.placeholder.com/510x360" alt="">
-                    </picture>
-                    <picture>
-                        <img class="img-fluid" src="http://via.placeholder.com/510x360" alt="">
+                        <img src="./img/service_pic.png" alt="">
                     </picture>
                 </div>
             </div>
-            <div class="goverment row mb-4">
-                <div class="col-md-4">
-                    <div class="card">
-                        <h3 class="text-center">Для громадських організацій</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sapiente ullam mollitia
-                            culpa alias numquam sed quibusdam? Quis ipsa vel voluptatum molestiae delectus incidunt
-                            sunt, optio ducimus sed cum ullam magnam! Corrupti, doloribus nam tempora atque quos nulla
-                            inventore facere iusto qui! Quibusdam voluptate nulla aut itaque provident dicta
-                            repudiandae!</p>
-                        <a href="#" class="text-center">Дізнатися більше</a>
+            <div class="activists row justify-content-between">
+                <div class="col-md-4 business-contact">
+                    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content mb-0 p-0">
+                                <h3 class="modal-head-block text-center">Зв'язатися з нами</h3>
+                                <form action="#" method="POST" class="feedback-form">
+                                    <label for="name"></label>
+                                    <input id="name" class="name" type="text" placeholder="Імя" required>
+                                    <label for="email"></label>
+                                    <input id="email" class="email" type="email" placeholder="Електронна адреса" required>
+                                    <label class="comment-label" for="comment">Ваш коментар</label>
+                                    <textarea name="comment" id="comment" cols="30" rows="8"
+                                        maxlength="300" required></textarea>
+                                    <div id="the-count">
+                                        <span class="current" id="current">0</span>
+                                    </div>
+                                </form>
+                                <input type="submit" value="Надіслати" class="submit-btn mt-2 mb-3">
+                                <button type="button" class="close-btn fas fa-times" data-dismiss="modal"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="business-head-block text-center text-md-left mt-4">Для громадських органiзацiй</h4>
+                    <p class="mr-4 mr-md-0">Але при деяких обставинах – або на вимогу боргу, або в силу якоїсь необхідності часто доводиться
+                        забувати про насолоди і не втікати від тягарів. Але при деяких обставинах – або на вимогу боргу,
+                        або в силу якоїсь необхідності часто доводиться забувати про насолоди і не втікати від тягарів.
+                        Але щоб ви зрозуміли, звідки часто доводиться забувати про насолоди і не втікати від тягарів.
+                    </p>
+                    <a data-toggle="modal" data-target="#modal3" class="modal-btn text-center mb-4">Зв'язатися з нами</a>
+                </div>
+                <div class="service-description col-md-6 mt-3">
+                    <h3 class="service-description-head">Описання</h3>
+                    <div class="description">
+                        <p>
+                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
+                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
+                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
+                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
+                        </p>
+                        <p>
+                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
+                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
+                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
+                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
+                        </p>
+                        <p>
+                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
+                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
+                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
+                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>Описання</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem aliquam possimus
-                        fugit eum neque voluptas repellat assumenda hic distinctio numquam beatae non molestiae enim
-                        corporis dicta quisquam, adipisci animi rem voluptatum modi minus inventore, officia magni? Unde
-                        laboriosam laborum, obcaecati ex ea quidem voluptatem asperiores! Inventore corrupti ipsam quasi
-                        provident esse iure quidem beatae, pariatur, accusantium nisi neque nam assumenda veritatis
-                        earum culpa soluta in perferendis placeat, quis fugit voluptates recusandae ut! Voluptatem harum
-                        fugit architecto in est. Sint hic, veritatis quam quis blanditiis illo tempora ad magni, id nisi
-                        aliquid voluptatibus minima itaque omnis ab maiores esse beatae.</p>
-                </div>
-                <div class="col-md-4">
+                <div class="sercive-picture col-md-2 text-center text-md-left">
                     <picture>
-                        <img class="img-fluid" src="http://via.placeholder.com/510x360" alt="">
-                    </picture>
-                    <picture>
-                        <img class="img-fluid" src="http://via.placeholder.com/510x360" alt="">
+                        <img src="./img/service_pic.png" alt="">
                     </picture>
                 </div>
             </div>
@@ -248,6 +332,3 @@
 </body>
 
 </html>
-
-
-

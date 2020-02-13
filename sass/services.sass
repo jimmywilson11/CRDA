@@ -3,3 +3,125 @@
 @import _header.sass
 @import _footer.sass
 @import _mixins.sass
+
+#main
+    padding: 5% 0
+    .business, .goverment, .activists
+        padding: 3% 0 0 0
+        margin: 2% 0
+        background-color: $bgc
+        .business-contact
+            box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25)
+            padding: 0 3% 0 0
+            height: 90%
+            .modal-dialog
+                top: 30%
+            .feedback-form
+                margin: 0 auto
+                display: flex
+                flex-direction: column
+                width: 90%
+                .comment-label
+                    font: 400 0.75rem $second-font
+                    color: $active-blue 
+                    padding: 3% 0 0 11%
+                .name
+                    width: 80%
+                    margin: 0 auto
+                    margin-bottom: 5%
+                    background-color: transparent
+                    border-style: none
+                    border-bottom: 2px solid $black
+                    padding: 2px 5px
+                    font: 300 0.9375rem $main-font
+                    &:hover
+                        border-bottom: 2px solid $active-blue
+                .email
+                    width: 80%
+                    margin: 0 auto
+                    background-color: transparent
+                    border-style: none
+                    border-bottom: 2px solid $black
+                    padding: 2px 5px
+                    font: 300 0.9375rem $main-font
+                    &:hover
+                        border-bottom: 2px solid $active-blue     
+                #comment
+                    padding: 0 5px 0 0
+                    margin: 0 auto
+                    resize: none
+                    width: 80%
+                    background-color: transparent
+                    border-style: none
+                    border-bottom: 2px solid $black
+                    font: 300 0.9375rem $main-font
+                    &:hover
+                        border-bottom: 2px solid $active-blue
+                .current
+                    position: relative
+                    float: right
+                    left: -10%
+                    font: 300 0.9375rem $second-font
+                    color: $active-blue 
+            .submit-btn
+                position: relative
+                display: inline
+                margin: 0 auto
+                font: 500 1rem $second-font
+                text-transform: uppercase
+                padding: 1% 10%
+                color: $white
+                background-color: $btn-color
+                border-style: none
+                border: 2px solid transparent
+                &:hover
+                    background-color: transparent
+                    color: $btn-color
+                    border: 2px solid $btn-color
+            .close-btn
+                position: absolute
+                right: 0
+                background-color: transparent
+                border-style: none
+                padding: 3%
+                color: $main-color
+            .modal-head-block
+                font: 500 1.4375rem $main-font
+                padding: 3% 2% 
+            .business-head-block
+                padding: 2% 0 2% 10%
+                display: block
+                font: 500 1.875rem $main-font
+                line-height: 42px
+                letter-spacing: 0.03em
+                color: $main-color
+                background-color: $dirty-pink
+            p
+                font: 400 1rem $second-font
+                line-height: 34px
+                text-indent: 16px
+                padding: 5% 0 5% 10%
+                text-align: justify
+            .modal-btn
+                display: inline-block
+                margin-left: 10%
+                font: 600 1rem $second-font
+                text-transform: uppercase
+                padding: 10px 40px
+                color: $white
+                background-color: $btn-color
+                border: 2px solid transparent
+                &:hover
+                    background-color: transparent
+                    color: $btn-color
+                    border: 2px solid $btn-color
+        .service-description
+            .service-description-head
+                font: 500 1.4375rem $main-font
+                padding: 2% 5%
+            p
+                font: 400 1rem $second-font
+                line-height: 34px
+                text-indent: 1rem
+        .sercive-picture
+            padding-left: 0

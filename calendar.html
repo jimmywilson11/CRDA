@@ -5,14 +5,14 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>CRDA Event Calendar</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/calendar_main.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/calendar.css">
 	<link rel="stylesheet" type="text/css" href="css/custom_2.css" />
-	<script src="./scripts/modernizr.custom.63321.js"></script>
+    <script src="./scripts/modernizr.custom.63321.js"></script>
+    <title>RDA Cherkasy - Календар Подій</title>
 </head>
 
 <body>
@@ -86,23 +86,19 @@
             </nav>
         </div>
     </header>
-	<section class="main">
+	<section id="main">
+        <h2 class="offset-md-2 text-left">Календар подій</h2>
 		<div class="container">
-			<h2>Календар подій</h2>
-			<div class="custom-calendar-wrap w-75">
+			<div class="custom-calendar-wrap mt-4">
 				<div id="custom-inner" class="custom-inner">
 					<div class="custom-header">
 						<nav>
 							<span id="custom-prev" class="custom-prev"></span>
 							<span id="custom-next" class="custom-next"></span>
 						</nav>
-						<h2 id="custom-month" class="custom-month"></h2>
-						<h3 id="custom-year" class="custom-year"></h3>
+						<h4 id="custom-month" class="custom-month"></h4>
 					</div>
 					<div id="calendar" class="fc-calendar-container"></div>
-                </div>
-                <div class="news">
-
                 </div>
 			</div>
 		</div>
