@@ -3,44 +3,62 @@ header {
   background-color: #85241E;
 }
 
-header .navbar-collapse .navbar-list .nav-item {
+.navbar {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  padding: 0;
+}
+
+.navbar .site-title-head {
+  font: 500 1.125rem Montserrat Regular, sans-serif;
+  line-height: 22px;
+}
+
+.navbar .navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.navbar .navbar-collapse .navbar-list .nav-item {
   padding: 0 10px;
   border-bottom: 5px solid transparent;
 }
 
-header .navbar-collapse .navbar-list .nav-item:hover {
+.navbar .navbar-collapse .navbar-list .nav-item:hover {
   border-top: 2px solid #FFF;
   color: #FFF;
   border-bottom: 2px solid #FFF;
 }
 
-header .navbar-collapse .navbar-list .nav-item:hover .nav-link {
+.navbar .navbar-collapse .navbar-list .nav-item:hover .nav-link {
   color: #FFF;
 }
 
-header .navbar-collapse .navbar-list .nav-item .nav-link {
+.navbar .navbar-collapse .navbar-list .nav-item .nav-link {
   color: #000;
-  font: 700 14px Montserrat Regular, sans-serif;
+  font: 500 1.125rem Montserrat Regular, sans-serif;
   opacity: .8;
 }
 
-header .navbar-collapse .navbar-list .active {
+.navbar .navbar-collapse .navbar-list .active {
   border-top: 5px solid #FFF;
   border-bottom: 5px solid #FFF;
 }
 
-header .navbar-collapse .navbar-list .active .nav-link {
+.navbar .navbar-collapse .navbar-list .active .nav-link {
   color: #FFF;
 }
 
-header .contacts .contact-item a {
+.navbar .contacts .contact-item a {
   text-decoration: none;
   color: #FFDEDC;
-  font: 600 18px Din Pro, sans-serif;
+  font: 600 0.8125rem Open Sans Regular, sans-serif;
   opacity: .8;
 }
 
-header .contacts .contact-item a:hover {
+.navbar .contacts .contact-item a:hover {
   opacity: 1;
   color: #FFF;
 }
@@ -57,7 +75,7 @@ footer .contacts .contact-item i {
 footer .contacts .contact-item a {
   text-decoration: none;
   color: #FFDEDC;
-  font: 600 14px Din Pro, sans-serif;
+  font: 600 14px Open Sans Regular, sans-serif;
   opacity: .8;
 }
 
@@ -72,6 +90,7 @@ footer .color-wrapper {
 
 footer .color-wrapper p {
   font: 600 18px Montserrat Regular, sans-serif;
+  margin: 0;
 }
 
 footer .color-wrapper a {
@@ -85,7 +104,7 @@ footer .color-wrapper a img {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -94,27 +113,35 @@ h2 {
   background-color: #FFDEDC;
   padding: 5px 0 5px 40px;
   border-left: 5px solid #85241E;
-  font: 600 1.2rem Montserrat Regular, sans-serif;
+  font: 600 1.875rem Montserrat Regular, sans-serif;
   line-height: 42px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.03em;
 }
 
 #project-description {
   background-image: url(../img/section_1_bg.png);
-  padding: 0 0 30px 0;
 }
 
-#project-description h3 {
-  font: 600 2.5rem Montserrat Regular, sans-serif;
-  padding: 0 0 16px 0;
+.description-wrapper {
+  padding-top: 4%;
+  margin-right: 0;
 }
 
-#project-description p {
-  font: 400 1.5rem Din Pro, sans-serif;
-  padding: 0 0 40px 0;
+.description-wrapper .description-info {
+  padding-top: 5%;
 }
 
-#project-description .button {
+.description-wrapper .description-info h1 {
+  font: 600 3rem Montserrat Regular, sans-serif;
+}
+
+.description-wrapper .description-info p {
+  font: 400 1.5rem Open Sans Regular, sans-serif;
+  line-height: 40px;
+  padding: 16px 0 40px 0;
+}
+
+.description-wrapper .description-info .button {
   display: inline-block;
   text-decoration: none;
   padding: 20px 40px;
@@ -125,15 +152,16 @@ h2 {
   background-color: #FF8982;
   opacity: .8;
   border-radius: 0;
+  overflow: hidden;
 }
 
-#project-description .button:hover {
+.description-wrapper .description-info .button:hover {
   color: #85241E;
   border: 2px solid #85241E;
   background-color: #FFF;
 }
 
-#project-description .button:active {
+.description-wrapper .description-info .button:active {
   color: #FFF;
   background-color: #85241E;
   opacity: .8;
@@ -146,6 +174,7 @@ h2 {
 #our-mission .mission-list .mission-item {
   position: relative;
   background-color: #F8F8F8;
+  margin: 0 10% 0 0;
   -webkit-box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
 }
@@ -182,22 +211,13 @@ h2 {
   border-bottom: 10px solid #BBBBBB;
 }
 
-#our-team h3 {
-  font: 500 23px Montserrat Regular, sans-serif;
-  line-height: 32px;
-}
-
-#our-team p {
-  font: 400 16px Din Pro, sans-serif;
-  line-height: 34px;
-}
-
-#our-team .team-list .teammate {
-  margin: 0 0 20px 0;
-}
-
 #our-direction {
   background-color: #ECECEC;
+  padding: 5% 0;
+}
+
+#our-direction .card-deck {
+  margin-top: 5%;
 }
 
 #our-direction .card-deck .card {
@@ -218,13 +238,42 @@ h2 {
 
 #our-direction .card-deck .card .card-body .card-title {
   padding: 24px 32px 0 32px;
-  font: 600 1.4rem Montserrat Regular, sans-serif;
+  font: 600 1.4375rem Montserrat Regular, sans-serif;
   line-height: 32px;
   margin: 0;
 }
 
 #our-direction .card-deck .card .card-body .card-text {
-  padding: 16px 32px;
-  font: 400 0.85rem Din Pro, sans-serif;
-  line-height: 1.5rem;
+  padding: 16px 32px 32px 32px;
+  font: 500 1rem Open Sans Regular, sans-serif;
+  line-height: 34px;
+}
+
+#linguee {
+  padding: 5% 0;
+}
+
+#linguee .gray-color-wrapper {
+  background-color: #ECECEC;
+}
+
+#linguee .gray-color-wrapper h3 {
+  font: 600 1.4375rem Montserrat Regular, sans-serif;
+  padding: 3%;
+}
+
+#linguee .gray-color-wrapper p {
+  font: 400 1rem Open Sans Regular, sans-serif;
+  text-indent: 16px;
+  line-height: 34px;
+  padding: 0 1% 2% 3%;
+  margin-bottom: 0;
+}
+
+#linguee .description-pic {
+  padding: 0;
+}
+
+#linguee .description-pic img {
+  height: 101%;
 }

@@ -9,27 +9,26 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>RDA Cherkasy - Головна Сторінка</title>
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark  flex-wrap">
+        <div class="container-fluid">
+            <nav
+                class="navbar navbar-expand-lg navbar-dark navbar-fixed-top justify-content-md-center flex-wrap pt-2 pt-md-0">
                 <h1 class="site-title">
-                    <a class="navbar-brand" aria-label="Site Logo" href="index.html">
+                    <a class="navbar-brand d-flex justify-content-center flex-wrap" aria-label="Site Logo"
+                        href="index.html">
                         <picture>
                             <img src="./img/logo.png" alt="Site Logo">
                         </picture>
+                        <p class="site-title-head text-md-center mt-4 ml-md-5 mr-md-4">Regional Development Agency</p>
                     </a>
                 </h1>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuburger"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse mr-4" id="menuburger">
-                    <ul class="navbar-list navbar-nav ml-auto text-center text-uppercase">
+                <div class="collapse navbar-collapse" id="menuburger">
+                    <ul class="navbar-list navbar-nav ml-auto text-center">
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html">Головна</a>
                         </li>
@@ -47,51 +46,67 @@
                         </li>
                     </ul>
                 </div>
-                <div class="contacts mt-2">
-                    <ul class="text-left">
-                        <li class="contact-item ml-1">
-                            <a href="tel:+380631231231">
-                                <i class="fas fa-phone-square"> +380631231231</i>
-                            </a>
+                <button class="navbar-toggler ml-5 ml-md-0" type="button" data-toggle="collapse"
+                    data-target="#menuburger" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="wrapper ml-md-3 d-flex justify-content-between">
+                    <div class="contacts mt-2 ml-md-0">
+                        <ul class="text-left">
+                            <li class="contact-item ml-1">
+                                <a href="tel:+380631231231">
+                                    <i class="fas fa-phone-square"> +380631231231</i>
+                                </a>
+                            </li>
+                            <li class="contact-item ml-1">
+                                <a href="mailto:info@info.ua">
+                                    <i class="far fa-envelope"> info@info.ua</i>
+                                </a>
+                            </li>
+                            <li class="contact-item ml-1">
+                                <a href="#">
+                                    <i class="fab fa-facebook-square"> facebook.com</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="languages mt-2 ml-2 pr-md-0 ml-md-4">
+                        <li class="languages-item active">
+                            <a href="#"><img src="./img/flag.png" alt="American Flag Icon"></a>
                         </li>
-                        <li class="contact-item ml-1">
-                            <a href="mailto:info@info.ua">
-                                <i class="far fa-envelope"> info@info.ua</i>
-                            </a>
+                        <li class="languages-item"><a href="#">
+                                <img src="./img/ukraine.png" alt="Ukrainian Flag Icon"></a>
                         </li>
-                        <li class="contact-item ml-1">
-                            <a href="#">
-                                <i class="fab fa-facebook-square"> facebook.com</i>
-                            </a>
+                        <li class="languages-item"><a href="#"><img src="./img/russia.png" alt="Russian Flag Icon"></a>
                         </li>
                     </ul>
                 </div>
-                <ul class="languages mt-1 ml-2 pr-md-0 ml-md-3">
-                    <li class="languages-item active">
-                        <a href="#"><img src="./img/flag.png" alt="American Flag Icon"></a>
-                    </li>
-                    <li class="languages-item"><a href="#">
-                            <img src="./img/ukraine.png" alt="Ukrainian Flag Icon"></a>
-                    </li>
-                    <li class="languages-item"><a href="#"><img src="./img/russia.png" alt="Russian Flag Icon"></a>
-                    </li>
-                </ul>
             </nav>
         </div>
     </header>
     <section id="project-description">
-        <div class="offset-md-2 row d-flex">
-            
-                
-            
-            
+        <div class="description-wrapper offset-lg-2 row d-flex">
+            <div class="col ml-2 description-info">
+                <picture>
+                    <img class="img-fluid" src="./img/logo_inverse.png" alt="">
+                </picture>
+                <h1 class="section-title mt-5">Золота підкова Черкащини</h1>
+                <p class="w-75">Втім, тут дуже легко і просто провести відмінності, тому що, коли ми вільні і нам надана
+                    повна можливість вибору бажаного</p>
+                <a class="button text-uppercase text-center mb-5" href="donation.html">Підтримати проект</a>
+            </div>
+            <div class="col-md-6 mb-5">
+                <picture>
+                    <img class="img-fluid ml-2" src="./img/cherkasy-pic.jpg" alt="">
+                </picture>
+            </div>
         </div>
     </section>
     <section id="our-mission">
-        <h2 class="offset-md-2 text-uppercase text-center text-md-left">Міссія</h2>
+        <h2 class="offset-md-2 text-left">Міссія</h2>
         <div class="container mission">
-            <ul class="card-deck justify-content-around mission-list d-flex flex-wrap">
-                <li class="card mission-item mb-5 text-center text-md-left flex-wrap">
+            <ul class="card-deck row justify-content-center mission-list d-flex flex-wrap ml-md-5">
+                <li class="card col-12 col-lg-4 mission-item mb-5 text-center text-md-left flex-wrap">
                     <h3 class="mt-2 ml-md-3">Дійсно, ніхто не відкидає, не зневажає, не уникає</h3>
                     <p class="text-left m-3">Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те,
                         що це насолоди,
@@ -104,7 +119,7 @@
                     </p>
                     <a href="#" class="open-more-1 active-button" id="open-more-1"></a>
                 </li>
-                <li class="card mission-item mb-5 text-center text-md-left flex-wrap">
+                <li class="card col-12 col-lg-4 mission-item mb-5 text-center text-md-left flex-wrap">
                     <h3 class="mt-2 ml-md-3">Дійсно, ніхто не відкидає, не зневажає, не уникає</h3>
                     <p class="text-left m-3">Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те,
                         що це насолоди,
@@ -117,27 +132,12 @@
                     </p>
                     <a href="#" class="open-more-2" id="open-more-2"></a>
                 </li>
-                <li class="card mission-item mb-5 text-center text-md-left flex-wrap">
-                    <h3 class="mt-2 ml-md-3">Дійсно, ніхто не відкидає, не зневажає, не уникає</h3>
-                    <p class="text-left m-3">Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те,
-                        що це насолоди,
-                        але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають великі
-                        страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би займатися якими б
-                        то не було тяжкими фізичними вправами, якщо б це не приносил. Вони винні так само, як і ті,
-                        хто через душевну слабкість, тобто через бажання уникнути страждань і болю відмовляється від
-                        виконання свого обов’язку. Втім, тут дуже легко і просто провести відмінності, тому що, коли
-                        ми вільні і нам надана повна можливість вибору бажаного, коли ніщо не заважає нам роби
-                    </p>
-                    <a href="#" class="open-more-3" id="open-more-3"></a>
-                </li>
+
             </ul>
         </div>
     </section>
-    <section id="our-team" >
-        <h2 class="offset-md-2 text-uppercase text-center text-md-left">Наша команда</h2>
-    </section>
     <section id="our-direction">
-        <h2 class="offset-md-2 text-uppercase text-center text-md-left">Напрямки</h2>
+        <h2 class="offset-md-2 text-left">Напрямки</h2>
         <div class="container">
             <ul class="card-deck">
                 <li class="card">
@@ -179,24 +179,31 @@
         </div>
     </section>
     <section id="linguee">
-        <h2 class="offset-md-2 text-uppercase text-center text-md-left">Цінності</h2>
-        <div class="container">
-            <div class="wrapper row d-flex flex-wrap mb-4">
-                <p class="col-md-12 col-lg-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nobis,
-                    pariatur incidunt rerum
-                    necessitatibus dignissimos a ea atque ipsam maiores quae, error aliquam. Ea id inventore incidunt
-                    repellat asperiores nostrum dolore accusantium vel nihil ut deleniti laudantium, quod corrupti
-                    magnam quam! Esse eaque modi nostrum dicta sequi corporis, porro doloribus aliquam, assumenda
-                    molestiae expedita labore aut, hic dolorum molestias iusto nemo tenetur architecto. Fugiat est ab a
-                    mollitia cupiditate nihil ullam pariatur? Ratione iste soluta eligendi iusto, quisquam tenetur fugit
-                    dolore atque ad consequatur ea? Culpa accusantium fugiat perferendis sequi iusto tempore sit,
-                    numquam voluptatum quas minima alias! Voluptatum enim cumque laboriosam dignissimos, nesciunt
-                    eveniet aspernatur dolores asperiores repellendus mollitia eaque pariatur ex, possimus cupiditate in
-                    debitis odio harum culpa.
-                </p>
-                <picture>
-                    <img class="img-fluid" src="http://via.placeholder.com/520x360" alt="">
-                </picture>
+        <h2 class="offset-md-2 text-left">Цінності</h2>
+        <div class="container-fluid">
+            <div class="mt-5 linguee-description offset-lg-2 row flex-wrap">
+                <div class="col gray-color-wrapper mt-3 mb-3">
+                    <h3 class="text-center text-md-left">Дійсно, ніхто не відкидає, не зневажає, не уникає</h3>
+                    <div class="mr-2">
+                        <p>Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це насолоди,
+                            але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають великі
+                            страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би займатися якими б
+                            то не було тяжкими фізичними вправами, якщо б це не приносил</p>
+                        <p>Вони винні так само, як і ті, хто через душевну слабкість, тобто через бажання уникнути
+                            страждань і болю відмовляється від виконання свого обов’язку. Втім, тут дуже легко і просто
+                            провести відмінності, тому що, коли ми вільні і нам надана повна можливість вибору бажаного,
+                            коли ніщо не заважає нам роби.</p>
+                        <p>Втім, тут дуже легко і просто провести відмінності, тому що, коли ми вільні і нам надана
+                            повна можливість вибору бажаного, коли ніщо не заважає нам робити те, що нам більше
+                            подобається, будь яку насолоду слід визнати бажаним, а будь-яке страждання огидним. Вони
+                            винні так само, як і ті, хто через душевну слабкість, тобто через ба</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 description-pic text-center text-lg-left">
+                    <picture>
+                        <img class="img-fluid" src="./img/lmg.png" alt="">
+                    </picture>
+                </div>
             </div>
         </div>
     </section>

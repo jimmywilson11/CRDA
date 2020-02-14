@@ -262,3 +262,8 @@
 		font-size: 15px;
 	}
 }
+@media screen and (max-width: 425px) {
+	.fc-calendar-container {
+		height: 350px;
+	}
+}

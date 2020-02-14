@@ -12,23 +12,11 @@ $(document).ready(function() {
         to.parentNode.insertBefore(s, to);
     })();
 
-    $('#open-more-1').click(function() {
-        $(this).addClass('active-button');
-		$('#open-more-2', '#open-more-3').removeClass('active-button');
-        $('#open-more-2').height('1%');
-        $('#open-more-3').height('1%');        	
-    });
-    $('#open-more-2').click(function() {
-        $(this).addClass('active-button');
-		$('#open-more-1', '#open-more-3').removeClass('active-button');
-        $('#open-more-1').height('1%');
-        $('#open-more-3').height('1%');        	
-    });
-    $('#open-more-3').click(function() {
-        $(this).addClass('active-button');
-		$('#open-more-1', '#open-more-2').removeClass('active-button');
-        $('#open-more-1').height('1%');
-        $('#open-more-2').height('1%');        	
-	});
-	
+    
+    $('textarea').keyup(function() {
+        var characterCount = $(this).val().length,
+            current = $('#current'),
+            theCount = $('#the-count');   
+        current.text(characterCount);    
+    });	
 })

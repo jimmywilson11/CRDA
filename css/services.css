@@ -3,44 +3,62 @@ header {
   background-color: #85241E;
 }
 
-header .navbar-collapse .navbar-list .nav-item {
+.navbar {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  padding: 0;
+}
+
+.navbar .site-title-head {
+  font: 500 1.125rem Montserrat Regular, sans-serif;
+  line-height: 22px;
+}
+
+.navbar .navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.navbar .navbar-collapse .navbar-list .nav-item {
   padding: 0 10px;
   border-bottom: 5px solid transparent;
 }
 
-header .navbar-collapse .navbar-list .nav-item:hover {
+.navbar .navbar-collapse .navbar-list .nav-item:hover {
   border-top: 2px solid #FFF;
   color: #FFF;
   border-bottom: 2px solid #FFF;
 }
 
-header .navbar-collapse .navbar-list .nav-item:hover .nav-link {
+.navbar .navbar-collapse .navbar-list .nav-item:hover .nav-link {
   color: #FFF;
 }
 
-header .navbar-collapse .navbar-list .nav-item .nav-link {
+.navbar .navbar-collapse .navbar-list .nav-item .nav-link {
   color: #000;
-  font: 700 14px Montserrat Regular, sans-serif;
+  font: 500 1.125rem Montserrat Regular, sans-serif;
   opacity: .8;
 }
 
-header .navbar-collapse .navbar-list .active {
+.navbar .navbar-collapse .navbar-list .active {
   border-top: 5px solid #FFF;
   border-bottom: 5px solid #FFF;
 }
 
-header .navbar-collapse .navbar-list .active .nav-link {
+.navbar .navbar-collapse .navbar-list .active .nav-link {
   color: #FFF;
 }
 
-header .contacts .contact-item a {
+.navbar .contacts .contact-item a {
   text-decoration: none;
   color: #FFDEDC;
-  font: 600 18px Din Pro, sans-serif;
+  font: 600 0.8125rem Open Sans Regular, sans-serif;
   opacity: .8;
 }
 
-header .contacts .contact-item a:hover {
+.navbar .contacts .contact-item a:hover {
   opacity: 1;
   color: #FFF;
 }
@@ -57,7 +75,7 @@ footer .contacts .contact-item i {
 footer .contacts .contact-item a {
   text-decoration: none;
   color: #FFDEDC;
-  font: 600 14px Din Pro, sans-serif;
+  font: 600 14px Open Sans Regular, sans-serif;
   opacity: .8;
 }
 
@@ -72,6 +90,7 @@ footer .color-wrapper {
 
 footer .color-wrapper p {
   font: 600 18px Montserrat Regular, sans-serif;
+  margin: 0;
 }
 
 footer .color-wrapper a {
@@ -85,7 +104,7 @@ footer .color-wrapper a img {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -94,7 +113,181 @@ h2 {
   background-color: #FFDEDC;
   padding: 5px 0 5px 40px;
   border-left: 5px solid #85241E;
-  font: 600 1.2rem Montserrat Regular, sans-serif;
+  font: 600 1.875rem Montserrat Regular, sans-serif;
   line-height: 42px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.03em;
+}
+
+#main {
+  padding: 5% 0;
+}
+
+#main .business, #main .goverment, #main .activists {
+  padding: 3% 0 0 0;
+  margin: 2% 0;
+  background-color: #F7F7F7;
+}
+
+#main .business .business-contact, #main .goverment .business-contact, #main .activists .business-contact {
+  -webkit-box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
+  padding: 0 3% 0 0;
+  height: 90%;
+}
+
+#main .business .business-contact .modal-dialog, #main .goverment .business-contact .modal-dialog, #main .activists .business-contact .modal-dialog {
+  top: 30%;
+}
+
+#main .business .business-contact .feedback-form, #main .goverment .business-contact .feedback-form, #main .activists .business-contact .feedback-form {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+#main .business .business-contact .feedback-form .comment-label, #main .goverment .business-contact .feedback-form .comment-label, #main .activists .business-contact .feedback-form .comment-label {
+  font: 400 0.75rem Open Sans Regular, sans-serif;
+  color: #039BE5;
+  padding: 3% 0 0 11%;
+}
+
+#main .business .business-contact .feedback-form .name, #main .goverment .business-contact .feedback-form .name, #main .activists .business-contact .feedback-form .name {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 2px solid #000;
+  padding: 2px 5px;
+  font: 300 0.9375rem Montserrat Regular, sans-serif;
+}
+
+#main .business .business-contact .feedback-form .name:hover, #main .goverment .business-contact .feedback-form .name:hover, #main .activists .business-contact .feedback-form .name:hover {
+  border-bottom: 2px solid #039BE5;
+}
+
+#main .business .business-contact .feedback-form .email, #main .goverment .business-contact .feedback-form .email, #main .activists .business-contact .feedback-form .email {
+  width: 80%;
+  margin: 0 auto;
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 2px solid #000;
+  padding: 2px 5px;
+  font: 300 0.9375rem Montserrat Regular, sans-serif;
+}
+
+#main .business .business-contact .feedback-form .email:hover, #main .goverment .business-contact .feedback-form .email:hover, #main .activists .business-contact .feedback-form .email:hover {
+  border-bottom: 2px solid #039BE5;
+}
+
+#main .business .business-contact .feedback-form #comment, #main .goverment .business-contact .feedback-form #comment, #main .activists .business-contact .feedback-form #comment {
+  padding: 0 5px 0 0;
+  margin: 0 auto;
+  resize: none;
+  width: 80%;
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 2px solid #000;
+  font: 300 0.9375rem Montserrat Regular, sans-serif;
+}
+
+#main .business .business-contact .feedback-form #comment:hover, #main .goverment .business-contact .feedback-form #comment:hover, #main .activists .business-contact .feedback-form #comment:hover {
+  border-bottom: 2px solid #039BE5;
+}
+
+#main .business .business-contact .feedback-form .current, #main .goverment .business-contact .feedback-form .current, #main .activists .business-contact .feedback-form .current {
+  position: relative;
+  float: right;
+  left: -10%;
+  font: 300 0.9375rem Open Sans Regular, sans-serif;
+  color: #039BE5;
+}
+
+#main .business .business-contact .submit-btn, #main .goverment .business-contact .submit-btn, #main .activists .business-contact .submit-btn {
+  position: relative;
+  display: inline;
+  margin: 0 auto;
+  font: 500 1rem Open Sans Regular, sans-serif;
+  text-transform: uppercase;
+  padding: 1% 10%;
+  color: #FFF;
+  background-color: #E8625A;
+  border-style: none;
+  border: 2px solid transparent;
+}
+
+#main .business .business-contact .submit-btn:hover, #main .goverment .business-contact .submit-btn:hover, #main .activists .business-contact .submit-btn:hover {
+  background-color: transparent;
+  color: #E8625A;
+  border: 2px solid #E8625A;
+}
+
+#main .business .business-contact .close-btn, #main .goverment .business-contact .close-btn, #main .activists .business-contact .close-btn {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  border-style: none;
+  padding: 3%;
+  color: #85241E;
+}
+
+#main .business .business-contact .modal-head-block, #main .goverment .business-contact .modal-head-block, #main .activists .business-contact .modal-head-block {
+  font: 500 1.4375rem Montserrat Regular, sans-serif;
+  padding: 3% 2%;
+}
+
+#main .business .business-contact .business-head-block, #main .goverment .business-contact .business-head-block, #main .activists .business-contact .business-head-block {
+  padding: 2% 0 2% 10%;
+  display: block;
+  font: 500 1.875rem Montserrat Regular, sans-serif;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #85241E;
+  background-color: #E7D3D2;
+}
+
+#main .business .business-contact p, #main .goverment .business-contact p, #main .activists .business-contact p {
+  font: 400 1rem Open Sans Regular, sans-serif;
+  line-height: 34px;
+  text-indent: 16px;
+  padding: 5% 0 5% 10%;
+  text-align: justify;
+}
+
+#main .business .business-contact .modal-btn, #main .goverment .business-contact .modal-btn, #main .activists .business-contact .modal-btn {
+  display: inline-block;
+  margin-left: 10%;
+  font: 600 1rem Open Sans Regular, sans-serif;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  color: #FFF;
+  background-color: #E8625A;
+  border: 2px solid transparent;
+}
+
+#main .business .business-contact .modal-btn:hover, #main .goverment .business-contact .modal-btn:hover, #main .activists .business-contact .modal-btn:hover {
+  background-color: transparent;
+  color: #E8625A;
+  border: 2px solid #E8625A;
+}
+
+#main .business .service-description .service-description-head, #main .goverment .service-description .service-description-head, #main .activists .service-description .service-description-head {
+  font: 500 1.4375rem Montserrat Regular, sans-serif;
+  padding: 2% 5%;
+}
+
+#main .business .service-description p, #main .goverment .service-description p, #main .activists .service-description p {
+  font: 400 1rem Open Sans Regular, sans-serif;
+  line-height: 34px;
+  text-indent: 1rem;
+}
+
+#main .business .sercive-picture, #main .goverment .sercive-picture, #main .activists .sercive-picture {
+  padding-left: 0;
 }
