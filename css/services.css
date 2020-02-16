@@ -103,6 +103,14 @@ footer .color-wrapper a img {
           filter: brightness(0) invert(1);
 }
 
+footer .address {
+  color: #FFF;
+}
+
+footer .address p {
+  font: 600 1.125rem Montserrat Regular, sans-serif;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -139,6 +147,10 @@ h2 {
   top: 30%;
 }
 
+#main .business .business-contact .modal-dialog .modal-content, #main .goverment .business-contact .modal-dialog .modal-content, #main .activists .business-contact .modal-dialog .modal-content {
+  padding: 0 0 5% 0;
+}
+
 #main .business .business-contact .feedback-form, #main .goverment .business-contact .feedback-form, #main .activists .business-contact .feedback-form {
   margin: 0 auto;
   display: -webkit-box;
@@ -149,6 +161,10 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 90%;
+}
+
+#main .business .business-contact .feedback-form input, #main .goverment .business-contact .feedback-form input, #main .activists .business-contact .feedback-form input {
+  margin: 3%;
 }
 
 #main .business .business-contact .feedback-form .comment-label, #main .goverment .business-contact .feedback-form .comment-label, #main .activists .business-contact .feedback-form .comment-label {
@@ -187,6 +203,7 @@ h2 {
 }
 
 #main .business .business-contact .feedback-form #comment, #main .goverment .business-contact .feedback-form #comment, #main .activists .business-contact .feedback-form #comment {
+  margin-top: 10px;
   padding: 0 5px 0 0;
   margin: 0 auto;
   resize: none;

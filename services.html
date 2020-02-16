@@ -87,12 +87,12 @@
     <section id="main">
         <h2 class="offset-md-2 text-left">Послуги</h2>
         <div class="container">
-            <div class="business row justify-content-between">
-                <div class="col-md-4 business-contact">
+            <div class="business row flex-wrap">
+                <div class="col-12 col-md-8 col-lg-4 business-contact">
                     <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog" role="document">
-                            <div class="modal-content mb-0 p-0">
-                                <h3 class="modal-head-block text-center">Зв'язатися з нами</h3>
+                            <div class="modal-content">
+                                <h3 class="modal-head-block text-center mt-3">Зв'язатися з нами</h3>
                                 <form action="#" method="POST" class="feedback-form">
                                     <label for="name"></label>
                                     <input id="name" class="name" type="text" placeholder="Імя" required>
@@ -100,9 +100,9 @@
                                     <input id="email" class="email" type="email" placeholder="Електронна адреса" required>
                                     <label class="comment-label" for="comment">Ваш коментар</label>
                                     <textarea name="comment" id="comment" cols="30" rows="8"
-                                        maxlength="300" required></textarea>
+                                        maxlength="300" oninput="getCount()" required></textarea>
                                     <div id="the-count">
-                                        <span class="current" id="current">0</span>
+                                        <span class="current" id="current">300</span>
                                     </div>
                                 </form>
                                 <input type="submit" value="Надіслати" class="submit-btn mt-2 mb-3">
@@ -118,9 +118,9 @@
                     </p>
                     <a data-toggle="modal" data-target="#modal1" class="modal-btn text-center mb-4">Зв'язатися з нами</a>
                 </div>
-                <div class="service-description col-md-6 mt-3">
+                <div class="service-description col-12 col-lg-4 col-xl-6 mt-3">
                     <h3 class="service-description-head">Описання</h3>
-                    <div class="description">
+                    <div class="description pr-2 pl-2">
                         <p>
                             Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
                             насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
@@ -141,18 +141,18 @@
                         </p>
                     </div>
                 </div>
-                <div class="sercive-picture col-md-2 text-center text-md-left">
+                <div class="sercive-picture col-lg-2 col-xl-2 text-center text-xl-left">
                     <picture>
                         <img src="./img/service_pic.png" alt="">
                     </picture>
                 </div>
             </div>
-            <div class="goverment row justify-content-between">
-                <div class="col-md-4 business-contact">
+            <div class="goverment row">
+                <div class="col-lg-4 col-md-8 business-contact">
                     <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog" role="document">
-                            <div class="modal-content mb-0 p-0">
-                                <h3 class="modal-head-block text-center">Зв'язатися з нами</h3>
+                            <div class="modal-content">
+                                <h3 class="modal-head-block text-center mt-3">Зв'язатися з нами</h3>
                                 <form action="#" method="POST" class="feedback-form">
                                     <label for="name"></label>
                                     <input id="name" class="name" type="text" placeholder="Імя" required>
@@ -162,7 +162,7 @@
                                     <textarea name="comment" id="comment" cols="30" rows="8"
                                         maxlength="300" required></textarea>
                                     <div id="the-count">
-                                        <span class="current" id="current">0</span>
+                                        <span class="current" id="current">300</span>
                                     </div>
                                 </form>
                                 <input type="submit" value="Надіслати" class="submit-btn mt-2 mb-3">
@@ -178,9 +178,9 @@
                     </p>
                     <a data-toggle="modal" data-target="#modal2" class="modal-btn text-center mb-4">Зв'язатися з нами</a>
                 </div>
-                <div class="service-description col-md-6 mt-3">
+                <div class="service-description col-12 col-lg-4 col-xl-6 mt-3">
                     <h3 class="service-description-head">Описання</h3>
-                    <div class="description">
+                    <div class="description pr-2 pl-2">
                         <p>
                             Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
                             насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
@@ -201,18 +201,18 @@
                         </p>
                     </div>
                 </div>
-                <div class="sercive-picture col-md-2 text-center text-md-left">
+                <div class="sercive-picture col-lg-2 col-xl-2 text-center text-xl-left">
                     <picture>
                         <img src="./img/service_pic.png" alt="">
                     </picture>
                 </div>
             </div>
-            <div class="activists row justify-content-between">
-                <div class="col-md-4 business-contact">
+            <div class="activists row">
+                <div class="col-lg-4 col-md-8 business-contact">
                     <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog" role="document">
-                            <div class="modal-content mb-0 p-0">
-                                <h3 class="modal-head-block text-center">Зв'язатися з нами</h3>
+                            <div class="modal-content">
+                                <h3 class="modal-head-block text-center mt-3">Зв'язатися з нами</h3>
                                 <form action="#" method="POST" class="feedback-form">
                                     <label for="name"></label>
                                     <input id="name" class="name" type="text" placeholder="Імя" required>
@@ -222,7 +222,7 @@
                                     <textarea name="comment" id="comment" cols="30" rows="8"
                                         maxlength="300" required></textarea>
                                     <div id="the-count">
-                                        <span class="current" id="current">0</span>
+                                        <span class="current" id="current">300</span>
                                     </div>
                                 </form>
                                 <input type="submit" value="Надіслати" class="submit-btn mt-2 mb-3">
@@ -238,9 +238,9 @@
                     </p>
                     <a data-toggle="modal" data-target="#modal3" class="modal-btn text-center mb-4">Зв'язатися з нами</a>
                 </div>
-                <div class="service-description col-md-6 mt-3">
+                <div class="service-description col-12 col-lg-4 col-xl-6 mt-3">
                     <h3 class="service-description-head">Описання</h3>
-                    <div class="description">
+                    <div class="description pr-2 pl-2">
                         <p>
                             Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
                             насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
@@ -261,7 +261,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="sercive-picture col-md-2 text-center text-md-left">
+                <div class="sercive-picture col-lg-2 col-xl-2 text-center text-xl-left">
                     <picture>
                         <img src="./img/service_pic.png" alt="">
                     </picture>
@@ -270,7 +270,7 @@
         </div>
     </section>
     <footer>
-        <div class="container d-flex justify-content-between flex-wrap">
+        <div class="ml-4 justify-content-between d-flex flex-wrap">
             <div class="mt-4 mb-4 mx-auto text-center text-md-left d-block">
                 <a aria-label="Site Logo" href="index.html">
                     <picture>
@@ -278,9 +278,8 @@
                     </picture>
                 </a>
             </div>
-            <div class="mx-auto mt-1" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3">
-                </div>
+            <div class="address d-flex mt-4">
+                <i class="fas fa-2x fa-map-marker-alt mr-4 mt-2"></i><p class="mt-1 mt-md-3">18000, Черкаси, бульвар Шевченка, 185.</p>
             </div>
             <div class="wrapper d-flex m-auto">
                 <div class="contacts mt-3">

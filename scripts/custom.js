@@ -1,22 +1,21 @@
 $(document).ready(function() {
     (function () {
-        var setting = {"height":100,"width":650,"zoom":17,"queryString":"улица Юрия Ильенко, 60, Черкассы, Черкасская область, Украина","place_id":"ChIJSalt8aVL0UAR6zckMlkqLXU","satellite":false,"centerCoord":[49.42598826854489,32.094822100000016],"cid":"0x752d2a59322437eb","lang":"ru","cityUrl":"/ukraine/cherkasy-35348","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"157017"};
+        var setting = {"height":600,"width":800,"zoom":17,"queryString":"бульвар Шевченка, 185, Черкаси, Черкасская область, Украина, 18000","place_id":"ChIJOWg4gX1L0UARfuAWeyA3jfI","satellite":false,"centerCoord":[49.44511511855742,32.06061759999998],"cid":"0xf28d37207b16e07e","lang":"ru","cityUrl":"/ukraine/cherkasy-35348","cityAnchorText":"Карта [CITY1], Черкассы, Украина","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"160777"};
         var d = document;
         var s = d.createElement('script');
-        s.src = 'https://1map.com/js/script-for-user.js?embed_id=157017';
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=160777';
         s.async = true;
         s.onload = function (e) {
           window.OneMap.initMap(setting)
         };
         var to = d.getElementsByTagName('script')[0];
         to.parentNode.insertBefore(s, to);
-    })();
+      })();
 
-    
-    $('textarea').keyup(function() {
-        var characterCount = $(this).val().length,
-            current = $('#current'),
-            theCount = $('#the-count');   
-        current.text(characterCount);    
-    });	
+    var text = document.getElementById('comment'),
+    count = document.getElementById('current');
+    text.onkeyup = function () {
+        var max = this.maxLength;
+        count.innerHTML = max - this.value.length;
+    };		
 })

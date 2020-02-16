@@ -65,6 +65,9 @@ header {
 
 footer {
   background-color: #3A2F2F;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 footer .contacts .contact-item i {
@@ -101,6 +104,14 @@ footer .color-wrapper a {
 footer .color-wrapper a img {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
+}
+
+footer .address {
+  color: #FFF;
+}
+
+footer .address p {
+  font: 600 1.125rem Montserrat Regular, sans-serif;
 }
 
 .container {

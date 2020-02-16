@@ -88,7 +88,7 @@
 
 .custom-header nav span:before {
 	font-family: 'fontawesome-selected';
-	color: #ef4f69;
+	color: #85241E;
 	position: absolute;
 	text-align: center;
 	width: 100%;
@@ -99,7 +99,7 @@
 }
 
 .custom-header nav span.custom-next:before {
-	content: '\25b8';
+	content: '\25b8';	
 }
 
 .custom-header nav span:hover:before {
@@ -159,7 +159,6 @@
 	padding: 20px;
 	background: #fff;
 	border-bottom: 1px solid #ddd;
-	border-top: 5px solid #ef4f69;
 	box-shadow: 0 1px rgba(255,255,255,0.9);
 	margin-bottom: 30px;
 }
@@ -264,6 +263,6 @@
 }
 @media screen and (max-width: 425px) {
 	.fc-calendar-container {
-		height: 350px;
+		height: 300px;
 	}
 }
