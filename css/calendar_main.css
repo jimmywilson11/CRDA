@@ -3,6 +3,16 @@ header {
   background-color: #85241E;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: .4s ease-in all;
+  transition: .4s ease-in all;
+}
+
 .navbar {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -65,9 +75,6 @@ header {
 
 footer {
   background-color: #3A2F2F;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 
 footer .contacts .contact-item i {
