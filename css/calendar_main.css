@@ -9,8 +9,8 @@ header {
   left: 0;
   width: 100%;
   z-index: 10;
-  -webkit-transition: .4s ease-in all;
-  transition: .4s ease-in all;
+  -webkit-animation: .8s linear;
+          animation: .8s linear;
 }
 
 .navbar {
@@ -33,12 +33,13 @@ header {
 
 .navbar .navbar-collapse .navbar-list .nav-item {
   padding: 0 10px;
+  border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
 }
 
 .navbar .navbar-collapse .navbar-list .nav-item:hover {
-  border-top: 2px solid #FFF;
   color: #FFF;
+  border-top: 2px solid #FFF;
   border-bottom: 2px solid #FFF;
 }
 
@@ -47,7 +48,7 @@ header {
 }
 
 .navbar .navbar-collapse .navbar-list .nav-item .nav-link {
-  color: #000;
+  color: #FFF;
   font: 500 1.125rem Montserrat Regular, sans-serif;
   opacity: .8;
 }
