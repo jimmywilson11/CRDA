@@ -221,8 +221,20 @@ h2 {
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-#our-team .mate-description {
-  margin: 6% 0 0 5%;
+#our-team .mate-mini {
+  padding: 0;
+}
+
+#our-team .mate-mini h5 {
+  font: 600 1.4375rem Montserrat Regular, sans-serif;
+  line-height: 32px;
+}
+
+#our-team .mate-mini p {
+  font: 500 1rem Open Sans Regular, sans-serif;
+  line-height: 34px;
+  text-indent: 16px;
+  padding: 0 15px 0 15px;
 }
 
 #our-team .mate-description h5 {
@@ -262,7 +274,7 @@ h2 {
 }
 
 #our-direction .card-deck .card .card-body .card-title {
-  padding: 24px 32px 0 32px;
+  padding: 3%;
   font: 600 1.2rem Montserrat Regular, sans-serif;
   line-height: 32px;
   margin: 0;
