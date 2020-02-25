@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container-fluid">
             <nav
                 class="navbar navbar-expand-lg navbar-dark navbar-fixed-top justify-content-md-center flex-wrap pt-2 pt-md-0">
@@ -87,22 +87,23 @@
     <section id="main">
         <h2 class="offset-md-2 text-left">Послуги</h2>
         <div class="container">
-            <div class="business row justify-content-between">
-                <div class="col-md-4 business-contact">
+            <div class="business row flex-wrap">
+                <div class="col-12 col-md-8 col-lg-4 business-contact">
                     <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog" role="document">
-                            <div class="modal-content mb-0 p-0">
-                                <h3 class="modal-head-block text-center">Зв'язатися з нами</h3>
+                            <div class="modal-content">
+                                <h3 class="modal-head-block text-center mt-3">Зв'язатися з нами</h3>
                                 <form action="#" method="POST" class="feedback-form">
                                     <label for="name"></label>
                                     <input id="name" class="name" type="text" placeholder="Імя" required>
                                     <label for="email"></label>
-                                    <input id="email" class="email" type="email" placeholder="Електронна адреса" required>
+                                    <input id="email" class="email" type="email" placeholder="Електронна адреса"
+                                        required>
                                     <label class="comment-label" for="comment">Ваш коментар</label>
-                                    <textarea name="comment" id="comment" cols="30" rows="8"
-                                        maxlength="300" required></textarea>
+                                    <textarea name="comment" id="comment" cols="30" rows="8" maxlength="300"
+                                        oninput="getCount()" required></textarea>
                                     <div id="the-count">
-                                        <span class="current" id="current">0</span>
+                                        <span class="current" id="current">300</span>
                                     </div>
                                 </form>
                                 <input type="submit" value="Надіслати" class="submit-btn mt-2 mb-3">
@@ -111,58 +112,51 @@
                         </div>
                     </div>
                     <h4 class="business-head-block text-center text-md-left mt-4">Для бізнесу</h4>
-                    <p class="mr-4 mr-md-0">Але при деяких обставинах – або на вимогу боргу, або в силу якоїсь необхідності часто доводиться
-                        забувати про насолоди і не втікати від тягарів. Але при деяких обставинах – або на вимогу боргу,
-                        або в силу якоїсь необхідності часто доводиться забувати про насолоди і не втікати від тягарів.
-                        Але щоб ви зрозуміли, звідки часто доводиться забувати про насолоди і не втікати від тягарів.
+                    <p class="mr-4 mr-md-0">Консультації, розробка проектів, проведення навчання
                     </p>
-                    <a data-toggle="modal" data-target="#modal1" class="modal-btn text-center mb-4">Зв'язатися з нами</a>
+                    <a data-toggle="modal" data-target="#modal1" class="modal-btn text-center mb-4">Зв'язатися з
+                        нами</a>
                 </div>
-                <div class="service-description col-md-6 mt-3">
+                <div class="service-description col-12 col-lg-4 col-xl-6 mt-3">
                     <h3 class="service-description-head">Описання</h3>
-                    <div class="description">
-                        <p>
-                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
-                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
-                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
-                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
-                        </p>
-                        <p>
-                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
-                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
-                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
-                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
-                        </p>
-                        <p>
-                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
-                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
-                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
-                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
-                        </p>
-                    </div>
+                    <ul class="description pr-2 pl-2">
+                        <li>Стратегічне планування для малого, середнього бізнесу</li>
+                        <li>Проконсультуємо та підберемо грантову програму</li>
+                        <li>Розробляємо проекти на отримання грантів</li>
+                        <li>Здійснюємо техніко-економічне обґрунтування бізнес планів для мікро- та малого бізнесу
+                        </li>
+                        <li>Консультуємо з питань відкриття власної справи</li>
+                        <li>Допоможемо підібрати КВЕДи, систему оподаткування, порядок звітування</li>
+                        <li>Консультуємо з питань кредитування банками малого і середнього бізнесу</li>
+                        <li>Проводимо тренінги, навчальні заходи з питань як відкрити власну справу</li>
+                        <li>Пошук міжнародних партнерів</li>
+                        <li>Разові усні консультації безкоштовні, інші - залежно від обсягів та затрат часу будуть
+                            визначені в індивідуальному порядку з клієнтом</li>
+                    </ul>
                 </div>
-                <div class="sercive-picture col-md-2 text-center text-md-left">
+                <div class="sercive-picture col-lg-2 col-xl-2 text-center text-xl-left">
                     <picture>
                         <img src="./img/service_pic.png" alt="">
                     </picture>
                 </div>
             </div>
-            <div class="goverment row justify-content-between">
-                <div class="col-md-4 business-contact">
+            <div class="goverment row">
+                <div class="col-lg-4 col-md-8 business-contact">
                     <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog" role="document">
-                            <div class="modal-content mb-0 p-0">
-                                <h3 class="modal-head-block text-center">Зв'язатися з нами</h3>
+                            <div class="modal-content">
+                                <h3 class="modal-head-block text-center mt-3">Зв'язатися з нами</h3>
                                 <form action="#" method="POST" class="feedback-form">
                                     <label for="name"></label>
                                     <input id="name" class="name" type="text" placeholder="Імя" required>
                                     <label for="email"></label>
-                                    <input id="email" class="email" type="email" placeholder="Електронна адреса" required>
+                                    <input id="email" class="email" type="email" placeholder="Електронна адреса"
+                                        required>
                                     <label class="comment-label" for="comment">Ваш коментар</label>
-                                    <textarea name="comment" id="comment" cols="30" rows="8"
-                                        maxlength="300" required></textarea>
+                                    <textarea name="comment" id="comment" cols="30" rows="8" maxlength="300"
+                                        required></textarea>
                                     <div id="the-count">
-                                        <span class="current" id="current">0</span>
+                                        <span class="current" id="current">300</span>
                                     </div>
                                 </form>
                                 <input type="submit" value="Надіслати" class="submit-btn mt-2 mb-3">
@@ -171,58 +165,67 @@
                         </div>
                     </div>
                     <h4 class="business-head-block text-center text-md-left mt-4">Для влади</h4>
-                    <p class="mr-4 mr-md-0">Але при деяких обставинах – або на вимогу боргу, або в силу якоїсь необхідності часто доводиться
-                        забувати про насолоди і не втікати від тягарів. Але при деяких обставинах – або на вимогу боргу,
-                        або в силу якоїсь необхідності часто доводиться забувати про насолоди і не втікати від тягарів.
-                        Але щоб ви зрозуміли, звідки часто доводиться забувати про насолоди і не втікати від тягарів.
+                    <p class="mr-4 mr-md-0">Консультації, розробка місцевих програм розвитку, проектів розвитку,
+                        реалізація проектів розвитку, навчання управлінців, адміністрування конкурсів проектів
                     </p>
-                    <a data-toggle="modal" data-target="#modal2" class="modal-btn text-center mb-4">Зв'язатися з нами</a>
+                    <a data-toggle="modal" data-target="#modal2" class="modal-btn text-center mb-4">Зв'язатися з
+                        нами</a>
                 </div>
-                <div class="service-description col-md-6 mt-3">
+                <div class="service-description col-12 col-lg-4 col-xl-6 mt-3">
                     <h3 class="service-description-head">Описання</h3>
-                    <div class="description">
-                        <p>
-                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
-                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
-                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
-                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
-                        </p>
-                        <p>
-                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
-                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
-                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
-                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
-                        </p>
-                        <p>
-                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
-                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
-                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
-                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
-                        </p>
-                    </div>
+                    <ul class="description pr-2 pl-2">
+                        <li>Стратегічне планування розвитку регіону, громад</li>
+                        <li>Розробка програм місцевого розвитку шляхом організації діалогу влади й громади</li>
+                        <li>Організовуємо, модеруємо, проводимо круглі столи, панельні дискусії, форуми, відкриті
+                            простори</li>
+                        <li>Консультуємо щодо умов участі в діючих грантових програмах в Україні</li>
+                        <li>Консультуємо щодо перетворення ідей в проекти</li>
+                        <li>Розробляємо проекти розвитку для подання їх на Державний фонд регіонального розвитку (ДФРР),
+                            конкурс проектів регіонального розвитку, які можуть реалізовуватися за рахунок коштів
+                            державного бюджету, отриманих від Європейського Союзу (т.зв. секторалка), на актуальні
+                            грантові програми в Україні</li>
+                        <li>Допомагаємо розвивати міжрегіональну економічну інтеграцію</li>
+                        <li>Допомагаємо розробляти міжрегіональні проекти розвитку та проекти співробітництва
+                            територіальних громад</li>
+                        <li>Допомагаємо в заповненні проектних заявок, аплікаційних форм, бюджету проекту, додатків
+                            згідно вимог донора</li>
+                        <li>Перекладемо ваш проект розвитку на англійську мову (english)</li>
+                        <li>Здійснюємо адміністрування проекту</li>
+                        <li>Допомагаємо знайти партнерів, експертів, тренерів в регіоні, в Україні та серед партнерів
+                            Агенції за кордоном</li>
+                        <li>Доброчесним клієнтам надаємо за їх зверненням рекомендаційні листи</li>
+                        <li>Доброчесним клієнтам пропонуємо партнерство в реалізації проектів</li>
+                        <li>Надаємо юридичні, фінансові консультації в процесі розробки проекту</li>
+                        <li>Розробляємо за зверненням клієнта тренінги чи інші навчальні інтенсиви для управлінців</li>
+                        <li>Організовуємо навчальні візити, візити з обміну досвідом в громади інших областей України
+                        </li>
+                        <li>Разові усні консультації безкоштовні, інші - залежно від обсягів та затрат часу будуть
+                            визначені в індивідуальному порядку з клієнтом</li>
+                    </ul>
                 </div>
-                <div class="sercive-picture col-md-2 text-center text-md-left">
+                <div class="sercive-picture col-lg-2 col-xl-2 text-center text-xl-left">
                     <picture>
                         <img src="./img/service_pic.png" alt="">
                     </picture>
                 </div>
             </div>
-            <div class="activists row justify-content-between">
-                <div class="col-md-4 business-contact">
+            <div class="activists row">
+                <div class="col-lg-4 col-md-8 business-contact">
                     <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog" role="document">
-                            <div class="modal-content mb-0 p-0">
-                                <h3 class="modal-head-block text-center">Зв'язатися з нами</h3>
+                            <div class="modal-content">
+                                <h3 class="modal-head-block text-center mt-3">Зв'язатися з нами</h3>
                                 <form action="#" method="POST" class="feedback-form">
                                     <label for="name"></label>
                                     <input id="name" class="name" type="text" placeholder="Імя" required>
                                     <label for="email"></label>
-                                    <input id="email" class="email" type="email" placeholder="Електронна адреса" required>
+                                    <input id="email" class="email" type="email" placeholder="Електронна адреса"
+                                        required>
                                     <label class="comment-label" for="comment">Ваш коментар</label>
-                                    <textarea name="comment" id="comment" cols="30" rows="8"
-                                        maxlength="300" required></textarea>
+                                    <textarea name="comment" id="comment" cols="30" rows="8" maxlength="300"
+                                        required></textarea>
                                     <div id="the-count">
-                                        <span class="current" id="current">0</span>
+                                        <span class="current" id="current">300</span>
                                     </div>
                                 </form>
                                 <input type="submit" value="Надіслати" class="submit-btn mt-2 mb-3">
@@ -231,37 +234,36 @@
                         </div>
                     </div>
                     <h4 class="business-head-block text-center text-md-left mt-4">Для громадських органiзацiй</h4>
-                    <p class="mr-4 mr-md-0">Але при деяких обставинах – або на вимогу боргу, або в силу якоїсь необхідності часто доводиться
-                        забувати про насолоди і не втікати від тягарів. Але при деяких обставинах – або на вимогу боргу,
-                        або в силу якоїсь необхідності часто доводиться забувати про насолоди і не втікати від тягарів.
-                        Але щоб ви зрозуміли, звідки часто доводиться забувати про насолоди і не втікати від тягарів.
-                    </p>
-                    <a data-toggle="modal" data-target="#modal3" class="modal-btn text-center mb-4">Зв'язатися з нами</a>
+                    <p class="mr-4 mr-md-0">Консультації з перетворення ідей в проекти, розробка проектів, управління
+                        проектами, навчання, партнерство</p>
+                    <a data-toggle="modal" data-target="#modal3" class="modal-btn text-center mb-4">Зв'язатися з
+                        нами</a>
                 </div>
-                <div class="service-description col-md-6 mt-3">
+                <div class="service-description col-12 col-lg-4 col-xl-6 mt-3">
                     <h3 class="service-description-head">Описання</h3>
-                    <div class="description">
-                        <p>
-                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
-                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
-                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
-                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
-                        </p>
-                        <p>
-                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
-                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
-                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
-                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
-                        </p>
-                        <p>
-                            Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це
-                            насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають
-                            великі страждання. Якщо скористатися найпростішим прикладом, то хто з нас став би
-                            займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносил
-                        </p>
-                    </div>
+                    <ul class="description pr-2 pl-2">
+                        <li>Стратегічне планування розвитку регіону, громад</li>
+                        <li>Консультуємо з питань залучення ресурсів в розвиток громадської організації</li>
+                        <li>Організовуємо, модеруємо, проводимо круглі столи, панельні дискусії, форуми, відкриті
+                            простори</li>
+                        <li>Консультуємо щодо умов участі в діючих грантових програмах в Україні</li>
+                        <li>Консультуємо щодо перетворення ідей в проекти</li>
+                        <li>Допомагаємо в заповненні проектних заявок, аплікаційних форм, бюджету проекту, додатків
+                            згідно вимог донора</li>
+                        <li>Перекладемо ваш проект розвитку на англійську мову (english)</li>
+                        <li>Здійснюємо адміністрування проекту</li>
+                        <li>Допомагаємо знайти партнерів, експертів, тренерів в регіоні, в Україні та серед партнерів
+                            Агенції за кордоном</li>
+                        <li>Доброчесним клієнтам надаємо за їх зверненням рекомендаційні листи</li>
+                        <li>Доброчесним клієнтам пропонуємо партнерство в реалізації проектів</li>
+                        <li>Надаємо юридичні, фінансові консультації в процесі розробки проекту</li>
+                        <li>Розробляємо за зверненням клієнта тренінги чи інші навчальні інтенсиви на актуальну тематику
+                        </li>
+                        <li>Разові усні консультації безкоштовні, інші - залежно від обсягів та затрат часу будуть
+                            визначені в індивідуальному порядку з клієнтом</li>
+                    </ul>
                 </div>
-                <div class="sercive-picture col-md-2 text-center text-md-left">
+                <div class="sercive-picture col-lg-2 col-xl-2 text-center text-xl-left">
                     <picture>
                         <img src="./img/service_pic.png" alt="">
                     </picture>
@@ -270,7 +272,7 @@
         </div>
     </section>
     <footer>
-        <div class="container d-flex justify-content-between flex-wrap">
+        <div class="ml-4 justify-content-between d-flex flex-wrap">
             <div class="mt-4 mb-4 mx-auto text-center text-md-left d-block">
                 <a aria-label="Site Logo" href="index.html">
                     <picture>
@@ -278,9 +280,9 @@
                     </picture>
                 </a>
             </div>
-            <div class="mx-auto mt-1" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3">
-                </div>
+            <div class="address d-flex mt-4">
+                <i class="fas fa-2x fa-map-marker-alt mr-4 mt-2"></i>
+                <p class="mt-1 mt-md-3">18000, Черкаси, бульвар Шевченка, 185.</p>
             </div>
             <div class="wrapper d-flex m-auto">
                 <div class="contacts mt-3">
@@ -328,7 +330,8 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/03c68ce9ed.js" crossorigin="anonymous"></script>
-    <script src="./scripts/custom.js" defer></script>
+    <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/counter.js" defer></script>
 </body>
 
 </html>

@@ -3,6 +3,16 @@ header {
   background-color: #85241E;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-animation: .8s linear;
+          animation: .8s linear;
+}
+
 .navbar {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -23,12 +33,13 @@ header {
 
 .navbar .navbar-collapse .navbar-list .nav-item {
   padding: 0 10px;
+  border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
 }
 
 .navbar .navbar-collapse .navbar-list .nav-item:hover {
-  border-top: 2px solid #FFF;
   color: #FFF;
+  border-top: 2px solid #FFF;
   border-bottom: 2px solid #FFF;
 }
 
@@ -37,7 +48,7 @@ header {
 }
 
 .navbar .navbar-collapse .navbar-list .nav-item .nav-link {
-  color: #000;
+  color: #FFF;
   font: 500 1.125rem Montserrat Regular, sans-serif;
   opacity: .8;
 }
@@ -103,6 +114,14 @@ footer .color-wrapper a img {
           filter: brightness(0) invert(1);
 }
 
+footer .address {
+  color: #FFF;
+}
+
+footer .address p {
+  font: 600 1.125rem Montserrat Regular, sans-serif;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -133,13 +152,15 @@ h2 {
 #project-leader .leader-description h3 {
   font: 600 1.5rem Open Sans Regular, sans-serif;
   line-height: 40px;
-  padding: 5% 0 3% 5%;
+  padding-left: 5%;
+  padding-top: 5%;
 }
 
 #project-leader .leader-description p {
-  font: 400 1rem Open Sans Regular, sans-serif;
+  font: 400 1.125rem Open Sans Regular, sans-serif;
   line-height: 34px;
-  padding: 0 5% 2% 5%;
+  padding-left: 5%;
+  text-indent: 1rem;
 }
 
 #project-leader .leader-description h4 {
@@ -148,37 +169,15 @@ h2 {
   padding: 0 0 0 5%;
 }
 
-#project-leader .leader-description span {
+#project-leader .leader-description li {
   color: #85241E;
-  font: 700 1.5rem Montserrat Regular, sans-serif;
+  font: 700 1.125rem Montserrat Regular, sans-serif;
   line-height: 32px;
-  padding-left: 3%;
+  padding-left: 5%;
 }
 
 #project-leader .leader-description i {
   padding: 0 0 0 5%;
-}
-
-#our-team .mate-item {
-  background-color: #FCF8F8;
-  margin: 1%;
-  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-#our-team .mate-description {
-  margin: 6% 0 0 5%;
-}
-
-#our-team .mate-description h3 {
-  font: 500 1.4375rem Montserrat Regular, sans-serif;
-  line-height: 32px;
-}
-
-#our-team .mate-description p {
-  font: 400 1rem Open Sans Regular, sans-serif;
-  line-height: 34px;
-  text-indent: 16px;
 }
 
 #motivation p {

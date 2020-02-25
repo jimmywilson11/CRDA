@@ -3,6 +3,16 @@ header {
   background-color: #85241E;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-animation: .8s linear;
+          animation: .8s linear;
+}
+
 .navbar {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -23,12 +33,13 @@ header {
 
 .navbar .navbar-collapse .navbar-list .nav-item {
   padding: 0 10px;
+  border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
 }
 
 .navbar .navbar-collapse .navbar-list .nav-item:hover {
-  border-top: 2px solid #FFF;
   color: #FFF;
+  border-top: 2px solid #FFF;
   border-bottom: 2px solid #FFF;
 }
 
@@ -37,7 +48,7 @@ header {
 }
 
 .navbar .navbar-collapse .navbar-list .nav-item .nav-link {
-  color: #000;
+  color: #FFF;
   font: 500 1.125rem Montserrat Regular, sans-serif;
   opacity: .8;
 }
@@ -103,6 +114,14 @@ footer .color-wrapper a img {
           filter: brightness(0) invert(1);
 }
 
+footer .address {
+  color: #FFF;
+}
+
+footer .address p {
+  font: 600 1.125rem Montserrat Regular, sans-serif;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -157,9 +176,5 @@ h2 {
 }
 
 #main .card .download-btn {
-  position: absolute;
   display: block;
-  top: 35%;
-  left: 65%;
-  bottom: 0;
 }

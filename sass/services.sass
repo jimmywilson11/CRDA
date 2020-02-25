@@ -16,11 +16,15 @@
             height: 90%
             .modal-dialog
                 top: 30%
+                .modal-content
+                    padding: 0 0 5% 0
             .feedback-form
                 margin: 0 auto
                 display: flex
                 flex-direction: column
                 width: 90%
+                input
+                    margin: 3%
                 .comment-label
                     font: 400 0.75rem $second-font
                     color: $active-blue 
@@ -47,6 +51,7 @@
                     &:hover
                         border-bottom: 2px solid $active-blue     
                 #comment
+                    margin-top: 10px
                     padding: 0 5px 0 0
                     margin: 0 auto
                     resize: none
@@ -77,7 +82,7 @@
                 &:hover
                     background-color: transparent
                     color: $btn-color
-                    border: 2px solid $btn-color
+                    border: 2px solid $btn-color             
             .close-btn
                 position: absolute
                 right: 0
@@ -111,6 +116,7 @@
                 color: $white
                 background-color: $btn-color
                 border: 2px solid transparent
+                cursor: pointer
                 &:hover
                     background-color: transparent
                     color: $btn-color
@@ -119,9 +125,8 @@
             .service-description-head
                 font: 500 1.4375rem $main-font
                 padding: 2% 5%
-            p
-                font: 400 1rem $second-font
+            li
+                font: 400 0.975rem $second-font
                 line-height: 34px
-                text-indent: 1rem
         .sercive-picture
             padding-left: 0
