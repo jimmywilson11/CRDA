@@ -237,6 +237,26 @@ h2 {
   padding: 0 15px 0 15px;
 }
 
+#our-team .indicator-item {
+  width: auto;
+  height: auto;
+  margin: 0;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 0 15px 0 0;
+}
+
+#our-team .indicator-item img {
+  max-width: 200px;
+  max-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#our-team .indicator-item .title-wrapper h3 {
+  font: 700 1.125rem Montserrat Regular, sans-serif;
+}
+
 #our-team .mate-description h5 {
   font: 600 1.4375rem Montserrat Regular, sans-serif;
   line-height: 32px;
