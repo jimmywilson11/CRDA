@@ -208,60 +208,36 @@ h2 {
 }
 
 #our-mission .mission-list .mission-item p {
-  text-indent: 16px;
-}
-
-#our-team .mate-item {
-  background-color: #FCF8F8;
-  margin: 1%;
-  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-#our-team .mate-mini {
-  padding: 0;
-}
-
-#our-team .mate-mini h5 {
-  font: 600 1.4375rem Montserrat Regular, sans-serif;
-  line-height: 32px;
-}
-
-#our-team .mate-mini p {
   font: 500 1rem Open Sans Regular, sans-serif;
   line-height: 34px;
   text-indent: 16px;
-  padding: 0 15px 0 15px;
 }
 
-#our-team .indicator-item {
+#our-team .team-item {
   width: auto;
   height: auto;
-  margin: 0;
   background: none;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   padding: 0 15px 0 0;
 }
 
-#our-team .indicator-item img {
+#our-team .team-item img {
   max-width: 200px;
   max-height: 200px;
+  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#our-team .indicator-item .title-wrapper h3 {
-  font: 700 1.125rem Montserrat Regular, sans-serif;
-}
-
-#our-team .mate-description h5 {
+#our-team .team-item .title-wrapper h3 {
   font: 600 1.4375rem Montserrat Regular, sans-serif;
   line-height: 32px;
 }
 
-#our-team .mate-description p {
+#our-team .team-item .title-wrapper p {
   font: 500 1rem Open Sans Regular, sans-serif;
   line-height: 34px;
+  text-indent: 16px;
+  padding: 0 15px 0 15px;
   text-indent: 16px;
 }
 
@@ -317,7 +293,7 @@ h2 {
 }
 
 #linguee .gray-color-wrapper p {
-  font: 400 1rem Open Sans Regular, sans-serif;
+  font: 500 1rem Open Sans Regular, sans-serif;
   text-indent: 16px;
   line-height: 34px;
   padding: 0 1% 2% 3%;
