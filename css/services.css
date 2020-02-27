@@ -210,7 +210,7 @@ h2 {
   border-bottom: 2px solid #039BE5;
 }
 
-#main .business .business-contact .feedback-form #comment, #main .goverment .business-contact .feedback-form #comment, #main .activists .business-contact .feedback-form #comment {
+#main .business .business-contact .feedback-form #comment, #main .business .business-contact .feedback-form #comment-2, #main .business .business-contact .feedback-form #comment-3, #main .goverment .business-contact .feedback-form #comment, #main .goverment .business-contact .feedback-form #comment-2, #main .goverment .business-contact .feedback-form #comment-3, #main .activists .business-contact .feedback-form #comment, #main .activists .business-contact .feedback-form #comment-2, #main .activists .business-contact .feedback-form #comment-3 {
   margin-top: 10px;
   padding: 0 5px 0 0;
   margin: 0 auto;
@@ -222,7 +222,7 @@ h2 {
   font: 300 0.9375rem Montserrat Regular, sans-serif;
 }
 
-#main .business .business-contact .feedback-form #comment:hover, #main .goverment .business-contact .feedback-form #comment:hover, #main .activists .business-contact .feedback-form #comment:hover {
+#main .business .business-contact .feedback-form #comment:hover, #main .business .business-contact .feedback-form #comment-2:hover, #main .business .business-contact .feedback-form #comment-3:hover, #main .goverment .business-contact .feedback-form #comment:hover, #main .goverment .business-contact .feedback-form #comment-2:hover, #main .goverment .business-contact .feedback-form #comment-3:hover, #main .activists .business-contact .feedback-form #comment:hover, #main .activists .business-contact .feedback-form #comment-2:hover, #main .activists .business-contact .feedback-form #comment-3:hover {
   border-bottom: 2px solid #039BE5;
 }
 
@@ -260,6 +260,10 @@ h2 {
   border-style: none;
   padding: 3%;
   color: #85241E;
+}
+
+#main .business .business-contact .close-btn:hover, #main .goverment .business-contact .close-btn:hover, #main .activists .business-contact .close-btn:hover {
+  cursor: pointer;
 }
 
 #main .business .business-contact .modal-head-block, #main .goverment .business-contact .modal-head-block, #main .activists .business-contact .modal-head-block {
