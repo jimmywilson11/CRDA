@@ -126,7 +126,7 @@ footer .address p {
 
 h2 {
   display: block;
-  background-color: #FFDEDC;
+  background-color: #FFF8F8;
   padding: 5px 0 5px 40px;
   border-left: 5px solid #85241E;
   font: 600 1.875rem Montserrat Regular, sans-serif;
@@ -295,16 +295,15 @@ h2 {
   font: 600 1rem Open Sans Regular, sans-serif;
   text-transform: uppercase;
   padding: 10px 40px;
-  color: #FFF;
-  background-color: #E8625A;
-  border: 2px solid transparent;
+  color: #E8625A;
+  background-color: transparent;
+  border: 2px solid #E8625A;
   cursor: pointer;
 }
 
 #main .business .business-contact .modal-btn:hover, #main .goverment .business-contact .modal-btn:hover, #main .activists .business-contact .modal-btn:hover {
-  background-color: transparent;
-  color: #E8625A;
-  border: 2px solid #E8625A;
+  background-color: #E8625A;
+  color: #FFF;
 }
 
 #main .business .service-description .service-description-head, #main .goverment .service-description .service-description-head, #main .activists .service-description .service-description-head {
@@ -313,6 +312,8 @@ h2 {
 }
 
 #main .business .service-description li, #main .goverment .service-description li, #main .activists .service-description li {
+  list-style: disc;
+  margin-left: 2%;
   font: 400 0.975rem Open Sans Regular, sans-serif;
   line-height: 34px;
 }

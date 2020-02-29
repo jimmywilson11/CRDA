@@ -126,7 +126,7 @@ footer .address p {
 
 h2 {
   display: block;
-  background-color: #FFDEDC;
+  background-color: #FFF8F8;
   padding: 5px 0 5px 40px;
   border-left: 5px solid #85241E;
   font: 600 1.875rem Montserrat Regular, sans-serif;
@@ -134,21 +134,17 @@ h2 {
   letter-spacing: 0.03em;
 }
 
-#project-description {
-  background-image: url(../img/section_1_bg.png);
-}
-
 .description-wrapper {
   padding-top: 4%;
   margin-right: 0;
 }
 
-.description-wrapper .description-info {
-  padding-top: 5%;
+.description-wrapper .description-info h1 {
+  font: 600 1.75rem Montserrat Regular, sans-serif;
 }
 
-.description-wrapper .description-info h1 {
-  font: 600 2rem Montserrat Regular, sans-serif;
+.description-wrapper .description-info h3 {
+  font: 600 1.125rem Montserrat Regular, sans-serif;
 }
 
 .description-wrapper .description-info h5 {
@@ -158,10 +154,12 @@ h2 {
 .description-wrapper .description-info p {
   font: 400 1rem Open Sans Regular, sans-serif;
   line-height: 32px;
+  text-indent: 1rem;
 }
 
-.description-wrapper .description-info li {
-  font: 400 1rem Open Sans Regular, sans-serif;
+.description-wrapper .description-info ul li {
+  margin: 10px 0;
+  font: 400 1.25rem Open Sans Regular, sans-serif;
 }
 
 .description-wrapper .description-info .button {

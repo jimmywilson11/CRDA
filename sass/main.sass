@@ -5,21 +5,24 @@
 @import _mixins.sass
 
 #project-description
-    background-image: url(../img/section_1_bg.png)
 .description-wrapper
     padding-top: 4%
     margin-right: 0
     .description-info
-        padding-top: 5%  
         h1
-            font: 600 2rem $main-font
+            font: 600 1.75rem $main-font
+        h3
+            font: 600 1.125rem $main-font
         h5
             font: 600 1.125rem $main-font
         p
             font: 400 1rem $second-font
             line-height: 32px
-        li
-             font: 400 1rem $second-font
+            text-indent: 1rem
+        ul
+            li
+                margin: 10px 0
+                font: 400 1.25rem $second-font
         .button
             display: inline-block
             text-decoration: none
