@@ -317,10 +317,11 @@ h2 {
 #main .business .service-description .toogler::before, #main .goverment .service-description .toogler::before, #main .activists .service-description .toogler::before {
   position: absolute;
   content: '';
-  width: 14px;
+  width: 10px;
   height: 14px;
-  border: 14px solid transparent;
-  border-top: 14px solid #85241E;
+  margin-top: 3px;
+  border: 10px solid transparent;
+  border-top: 10px solid #85241E;
   left: -25px;
 }
 
@@ -329,8 +330,8 @@ h2 {
 }
 
 #main .business .service-description .toogler:hover::before, #main .goverment .service-description .toogler:hover::before, #main .activists .service-description .toogler:hover::before {
-  border: 14px solid transparent;
-  border-top: 14px solid #FF8982;
+  border: 10px solid transparent;
+  border-top: 10px solid #FF8982;
 }
 
 #main .business .service-description li, #main .goverment .service-description li, #main .activists .service-description li {

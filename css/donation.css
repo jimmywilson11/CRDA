@@ -162,6 +162,9 @@ h2 {
   padding-left: 5%;
 }
 
-#project-leader .leader-description i {
-  padding: 0 0 0 5%;
+#project-leader .leader-description .rnum {
+  padding: 0.2rem 0;
+  margin-bottom: 0;
+  text-indent: 0;
+  font: 700 1rem Montserrat Regular, sans-serif;
 }
