@@ -7,7 +7,6 @@ header
     width: 100%
     z-index: 10
     animation: .8s linear
-
 .navbar
     flex-grow: 0
     padding: 0 !important
@@ -17,20 +16,17 @@ header
     .navbar-collapse
         flex-grow: 0 
         .navbar-list
-            .nav-item      
-                padding: 23px 10px
-                border-bottom: 10px solid transparent
+            .nav-item
+                opacity: .6
+                padding: 0 10px              
                 &:hover
-                    color: $white
-                    border-bottom: 7px solid $white
-                    .nav-link
-                        color: $white               
+                    opacity: 1                
+                    .nav-link                                      
                 .nav-link
                     color: $white  
-                    font: 500 1.125rem $main-font
-                    opacity: .8                         
+                    font: 500 1.125rem $main-font                           
             .active
-                border-bottom: 10px solid $white
+                opacity: 1
                 .nav-link
                     color: $white             
     .contacts

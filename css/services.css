@@ -32,27 +32,21 @@ header {
 }
 
 .navbar .navbar-collapse .navbar-list .nav-item {
-  padding: 23px 10px;
-  border-bottom: 10px solid transparent;
+  opacity: .6;
+  padding: 0 10px;
 }
 
 .navbar .navbar-collapse .navbar-list .nav-item:hover {
-  color: #FFF;
-  border-bottom: 7px solid #FFF;
-}
-
-.navbar .navbar-collapse .navbar-list .nav-item:hover .nav-link {
-  color: #FFF;
+  opacity: 1;
 }
 
 .navbar .navbar-collapse .navbar-list .nav-item .nav-link {
   color: #FFF;
   font: 500 1.125rem Montserrat Regular, sans-serif;
-  opacity: .8;
 }
 
 .navbar .navbar-collapse .navbar-list .active {
-  border-bottom: 10px solid #FFF;
+  opacity: 1;
 }
 
 .navbar .navbar-collapse .navbar-list .active .nav-link {
@@ -241,16 +235,14 @@ h2 {
   font: 500 1rem Open Sans Regular, sans-serif;
   text-transform: uppercase;
   padding: 1% 10%;
-  color: #FFF;
-  background-color: #E8625A;
-  border-style: none;
-  border: 2px solid transparent;
-}
-
-#main .business .business-contact .submit-btn:hover, #main .goverment .business-contact .submit-btn:hover, #main .activists .business-contact .submit-btn:hover {
   background-color: transparent;
   color: #E8625A;
   border: 2px solid #E8625A;
+}
+
+#main .business .business-contact .submit-btn:hover, #main .goverment .business-contact .submit-btn:hover, #main .activists .business-contact .submit-btn:hover {
+  color: #FFF;
+  background-color: #E8625A;
 }
 
 #main .business .business-contact .close-btn, #main .goverment .business-contact .close-btn, #main .activists .business-contact .close-btn {
@@ -263,6 +255,7 @@ h2 {
 }
 
 #main .business .business-contact .close-btn:hover, #main .goverment .business-contact .close-btn:hover, #main .activists .business-contact .close-btn:hover {
+  color: #FF8982;
   cursor: pointer;
 }
 
@@ -309,6 +302,35 @@ h2 {
 #main .business .service-description .service-description-head, #main .goverment .service-description .service-description-head, #main .activists .service-description .service-description-head {
   font: 500 1.4375rem Montserrat Regular, sans-serif;
   padding: 2% 5%;
+}
+
+#main .business .service-description .toogler, #main .goverment .service-description .toogler, #main .activists .service-description .toogler {
+  background: transparent;
+  position: relative;
+  border-style: none;
+  color: #85241E;
+  margin-left: 35%;
+  text-transform: uppercase;
+  font: 600 0.875rem Montserrat Regular, sans-serif;
+}
+
+#main .business .service-description .toogler::before, #main .goverment .service-description .toogler::before, #main .activists .service-description .toogler::before {
+  position: absolute;
+  content: '';
+  width: 14px;
+  height: 14px;
+  border: 14px solid transparent;
+  border-top: 14px solid #85241E;
+  left: -25px;
+}
+
+#main .business .service-description .toogler:hover, #main .goverment .service-description .toogler:hover, #main .activists .service-description .toogler:hover {
+  color: #FF8982;
+}
+
+#main .business .service-description .toogler:hover::before, #main .goverment .service-description .toogler:hover::before, #main .activists .service-description .toogler:hover::before {
+  border: 14px solid transparent;
+  border-top: 14px solid #FF8982;
 }
 
 #main .business .service-description li, #main .goverment .service-description li, #main .activists .service-description li {

@@ -32,27 +32,21 @@ header {
 }
 
 .navbar .navbar-collapse .navbar-list .nav-item {
-  padding: 23px 10px;
-  border-bottom: 10px solid transparent;
+  opacity: .6;
+  padding: 0 10px;
 }
 
 .navbar .navbar-collapse .navbar-list .nav-item:hover {
-  color: #FFF;
-  border-bottom: 7px solid #FFF;
-}
-
-.navbar .navbar-collapse .navbar-list .nav-item:hover .nav-link {
-  color: #FFF;
+  opacity: 1;
 }
 
 .navbar .navbar-collapse .navbar-list .nav-item .nav-link {
   color: #FFF;
   font: 500 1.125rem Montserrat Regular, sans-serif;
-  opacity: .8;
 }
 
 .navbar .navbar-collapse .navbar-list .active {
-  border-bottom: 10px solid #FFF;
+  opacity: 1;
 }
 
 .navbar .navbar-collapse .navbar-list .active .nav-link {
