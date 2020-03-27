@@ -1,0 +1,49 @@
+.header
+    background-color: $main-color
+.fixed
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 10
+    animation: .8s linear
+.navbar
+    padding: 0
+    .site-title-head
+        font: 500 1.125rem $main-font
+        line-height: 22px
+        color: $white
+    .navbar-collapse
+        flex-grow: 0 
+        .navbar-list
+            .nav-item
+                opacity: .6
+                padding: 0 10px              
+                &:hover
+                    opacity: 1                
+                    .nav-link                                      
+                .nav-link
+                    color: $white  
+                    font: 500 1.125rem $main-font                           
+            .active
+                opacity: 1
+                .nav-link
+                    color: $white             
+    .contacts
+        text-align: right
+        .contact-item
+            a
+                text-decoration: none
+                color: $dirty-white
+                font: 600 0.8125rem $second-font
+                opacity: .8
+                &:hover
+                    opacity: 1
+                    color: $white
+    .languages
+        .lang-item
+            margin: 3px 0 
+            &:hover
+                opacity: .8                
+            a
+                padding: 0
