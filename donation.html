@@ -10,25 +10,23 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/donation.css">
-    <title>RDA Cherkasy - Підтримати проект</title>
+    <title>RDA Cherkasy - Підтримати проєкт</title>
 </head>
 
 <body>
     <header class="header">
         <div class="container-fluid">
             <nav
-                class="navbar navbar-expand-lg navbar-dark navbar-fixed-top justify-content-md-center flex-wrap pt-2 pt-md-0">
-                <h1 class="site-title">
-                    <a class="navbar-brand d-flex justify-content-center flex-wrap" aria-label="Site Logo"
+                class="offset-xl-1 navbar navbar-expand-lg justify-content-center justify-content-md-between navbar-dark d-flex flex-wrap">
+                <h1 class="site-title mb-0">
+                    <a class="navbar-brand d-flex justify-content-between flex-wrap" aria-label="Site Logo"
                         href="index.html">
-                        <picture>
-                            <img src="./img/logo.png" alt="Site Logo">
-                        </picture>
-                        <p class="site-title-head text-md-center mt-4 ml-md-5 mr-md-4">Regional Development Agency</p>
+                        <img class="d-block mx-auto" src="./img/logo.png" alt="Site Logo">
+                        <p class="site-title-head text-center pt-3 pl-md-5">Regional Development Agency</p>
                     </a>
                 </h1>
                 <div class="collapse navbar-collapse" id="menuburger">
-                    <ul class="navbar-list navbar-nav ml-auto text-center">
+                    <ul class="navbar-list navbar-nav mx-auto text-center">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Головна</a>
                         </li>
@@ -42,61 +40,55 @@
                             <a class="nav-link" href="reports.html">Звіти</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="donation.html">Підтримати проект</a>
+                            <a class="nav-link" href="donation.html">Підтримати проєкт</a>
                         </li>
                     </ul>
+                    <button class="navbar-toggler ml-3 mr-3 ml-md-0" type="button" data-toggle="collapse"
+                        data-target="#menuburger" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
-                <button class="navbar-toggler ml-5 ml-md-0" type="button" data-toggle="collapse"
-                    data-target="#menuburger" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="wrapper ml-md-3 d-flex justify-content-between">
-                    <div class="contacts mt-2 ml-md-0">
-                        <ul class="text-left">
-                            <li class="contact-item ml-1">
-                                <a href="tel:+380631231231">
-                                    <i class="fas fa-phone-square"> +380631231231</i>
-                                </a>
+                <div class="contacts mt-md-2 d-flex justify-content-between">
+                    <ul class="text-left">
+                        <li class="contact-item">
+                            <a href="tel:+380949852932">
+                                <i class="fas fa-phone-square"> +380949852932</i>
+                            </a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="mailto:rda.ck.ua@gmail.com">
+                                <i class="far fa-envelope"> rda.ck.ua@gmail.com</i>
+                            </a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="https://www.facebook.com/rda.ck.ua/">
+                                <i class="fab fa-facebook-square"> fb.com/rda.ck.ua</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="row px-4">
+                        <ul class="col languages ml-3 ml-md-1 text-center">
+                            <li class="languages-item">
+                                <a href="#"><img src="./img/flag.png" alt="American Flag Icon"></a>
                             </li>
-                            <li class="contact-item ml-1">
-                                <a href="mailto:info@info.ua">
-                                    <i class="far fa-envelope"> info@info.ua</i>
-                                </a>
+                            <li class="languages-item"><a href="#">
+                                    <img src="./img/ukraine.png" alt="Ukrainian Flag Icon"></a>
                             </li>
-                            <li class="contact-item ml-1">
-                                <a href="#">
-                                    <i class="fab fa-facebook-square"> facebook.com</i>
-                                </a>
+                            <li class="languages-item"><a href="#"><img src="./img/russia.png"
+                                        alt="Russian Flag Icon"></a>
                             </li>
                         </ul>
                     </div>
-                    <ul class="languages mt-2 ml-2 pr-md-0 ml-md-4">
-                        <li class="languages-item active">
-                            <a href="#"><img src="./img/flag.png" alt="American Flag Icon"></a>
-                        </li>
-                        <li class="languages-item"><a href="#">
-                                <img src="./img/ukraine.png" alt="Ukrainian Flag Icon"></a>
-                        </li>
-                        <li class="languages-item"><a href="#"><img src="./img/russia.png" alt="Russian Flag Icon"></a>
-                        </li>
-                    </ul>
                 </div>
             </nav>
         </div>
     </header>
-    <section id="project-leader">
-        <h2 class="offset-md-2 text-left">Підтримати проект</h2>
+    <section id="donation-info">
+        <h2 class="section-title offset-md-1 text-left">Підтримати проєкт</h2>
         <div class="container d-flex flex-wrap flex-md-nowrap mb-3">
-            <picture>
-                <img class="img-fluid mt-md-5 mt-lg-0" src="./img/teamleader.JPG" alt="">
-            </picture>
-            <div class="leader-description col-lg-8">
-                <h3 class="text-center text-md-left">Любов Ропало</h3>
-                <p class="text-center text-md-left">Директор Агенції, очолює установу з лютого 2018 року. Досвідчений
-                    тренер з неформальної освіти, проектний менеджер, експерт з питань децентралізації, місцевого
-                    економічного
-                    розвитку, стратегічного планування, історик, юрист.</p>
-                <h4>Нас можна підтримати:</h4>
+            <img class="p-0 col-md-7 img-fluid" src="./img/mission.png" alt="">
+            <div class="donation-info-description">
+                <h4 class="pt-3">Нас можна підтримати:</h4>
                 <ul class="credit-info">
                     <li>Черкаська агенція регіонального розвитку</li>
                     <li>ЄДРПОУ 40848641</li>
@@ -104,72 +96,70 @@
                     <li>ПАТ КБ «Приватбанк»</li>
                     <li>МФО 354347</li>
                 </ul>
+                <p>Призначення платежу: безповоротна фінансова допомога</p>
             </div>
         </div>
     </section>
-    <section id="motivation">
-        <h2 class="offset-md-2 text-left">Мотивуючий текст та подяка</h2>
-        <div class="container">
-            <p class="offset-md-1 w-md-75 p-4 text-center text-md-left">Втім, тут дуже легко і просто провести
-                відмінності, тому що, коли ми вільні і нам надана повна можливість
-                вибору бажаного, коли ніщо не заважає нам робити те, що нам більше подобається, будь яку насолоду слід
-                визнати бажаним, а будь-яке страждання огидним. Втім, тут дуже легко і просто провести відмінності, тому
-                що, коли ми вільні і нам надана повна можливість вибору бажаного, коли ніщо не заважає нам робити те, що
-                нам більше подобається, будь яку насолоду слід визнати бажаним, а будь-яке страждання огид</p>
-        </div>
-    </section>
     <section id="position">
-        <h2 class="offset-md-2 text-left">Ми на мапі</h2>
+        <h2 class="section-title offset-md-1 text-left">Ми на мапі</h2>
         <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3" class="container mb-3">
             <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
         </div>
     </section>
     <footer>
-        <div class="ml-4 justify-content-between d-flex flex-wrap">
-            <div class="mt-4 mb-4 mx-auto text-center text-md-left d-block">
-                <a aria-label="Site Logo" href="index.html">
-                    <picture>
-                        <img src="./img/logo.png" alt="Site Logo">
-                    </picture>
-                </a>
-            </div>
-            <div class="address d-flex mt-md-4">
-                <i class="fas fa-2x fa-map-marker-alt mr-4 mt-3"></i>
-                <p class="mt-3 mt-md-4">18000, Черкаси, бульвар Шевченка, 185.</p>
-            </div>
-            <div class="wrapper d-flex m-auto">
-                <div class="contacts mt-3">
-                    <ul class="text-left">
-                        <li class="contact-item ml-1">
-                            <i class="fas fa-phone-square"><a class="ml-1"
-                                    href="tel:+380631231231">+380631231231</a></i>
-                        </li>
-                        <li class="contact-item ml-1">
-                            <i class="far fa-envelope"><a class="ml-1 text-right" href="mailto:info@info.ua">
-                                    info@info.ua</a></i>
-                        </li>
-                        <li class="contact-item ml-1">
-                            <i class="fab fa-facebook-square"><a class="ml-1 text-right" href="#"> facebook.com</a></i>
-                        </li>
-                    </ul>
+        <div class="container-fluid">
+            <div class="offset-xl-1 footer-content d-flex flex-wrap justify-content-between">
+                <div class="mt-4 mx-auto text-center text-md-left d-block">
+                    <a aria-label="Site Logo" href="index.html">
+                        <picture>
+                            <img src="./img/logo.png" alt="Site Logo">
+                        </picture>
+                    </a>
                 </div>
-                <ul class="languages mt-3 ml-3 pr-3 pr-md-0">
-                    <li class="languages-item active">
-                        <a href="#"><img src="./img/flag.png" alt="American Flag Icon"></a>
-                    </li>
-                    <li class="languages-item">
-                        <a href="#"><img src="./img/ukraine.png" alt="Ukrainian Flag Icon"></a>
-                    </li>
-                    <li class="languages-item">
-                        <a href="#"><img src="./img/russia.png" alt="Russian Flag Icon"></a>
-                    </li>
-                </ul>
+                <div class="address d-flex mt-md-3 justify-content-center">
+                    <i class="fas fa-2x fa-map-marker-alt mr-4 mt-3"></i>
+                    <p class="mt-3">18000, Черкаси, бульвар Шевченка, 185, "Прозорий офiс"</p>
+                </div>
+                <div class="contact-wrapper mb-3 d-flex m-auto">
+                    <div class="contacts mt-3">
+                        <ul class="text-left">
+                            <li class="contact-item ml-1">
+                                <i class="fas fa-phone-square"><a class="ml-1"
+                                        href="tel:+380949852932">+380949852932</a></i>
+                            </li>
+                            <li class="contact-item ml-1">
+                                <i class="far fa-envelope"><a class="ml-1 text-right" href="mailto:rda.ck.ua@gmail.com">
+                                        rda.ck.ua@gmail.com</a></i>
+                            </li>
+                            <li class="contact-item ml-1">
+                                <i class="fab fa-facebook-square"><a class="ml-1 text-right"
+                                        href="https://www.facebook.com/rda.ck.ua/"> fb.com/rda.ck.ua</a></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row mt-3">
+                        <ul class="col languages ml-5 ml-lg-4 mr-lg-4 mr-xl-0 text-center">
+                            <li class="languages-item active">
+                                <a href="#"><img src="./img/flag.png" alt="American Flag Icon"></a>
+                            </li>
+                            <li class="languages-item">
+                                <a href="#"><img src="./img/ukraine.png" alt="Ukrainian Flag Icon"></a>
+                            </li>
+                            <li class="languages-item">
+                                <a href="#"><img src="./img/russia.png" alt="Russian Flag Icon"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="color-wrapper">
-            <div class="container">
-                <p>Створено командою: <a class="ml-3" href="http://geekhub.ck.ua"><img src="./img/gh.png" alt=""></a>
-                </p>
+            <div class="color-wrapper row">
+                <div class="offset-xl-1">
+                    <p class="ml-3 ml-xl-5 text-center text-md-left mb-0">Створено командою:
+                        <a class="ml-3" href="http://geekhub.ck.ua">
+                            <img src="./img/gh.png" alt="GeekHub Logo">
+                        </a>
+                    </p>
+                </div>
             </div>
         </div>
     </footer>

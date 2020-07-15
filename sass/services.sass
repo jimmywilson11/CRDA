@@ -5,15 +5,14 @@
 @import _mixins.sass
 
 #main
-    padding: 5% 0
+    padding: 3% 0
     .business, .goverment, .activists
-        padding: 3% 0 0 0
         margin: 2% 0
-        background-color: $bgc
         .business-contact
             box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25)
-            padding: 0 3% 0 0
-            height: 90%
+            padding: 0 2em 0 0
+            height: 45%
+            background-color: #fff
             .modal-dialog
                 top: 30%
                 .modal-content
@@ -50,7 +49,7 @@
                     font: 300 0.9375rem $main-font
                     &:hover
                         border-bottom: 2px solid $active-blue     
-                #comment
+                #comment, #comment-2, #comment-3
                     margin-top: 10px
                     padding: 0 5px 0 0
                     margin: 0 auto
@@ -75,14 +74,12 @@
                 font: 500 1rem $second-font
                 text-transform: uppercase
                 padding: 1% 10%
-                color: $white
-                background-color: $btn-color
-                border-style: none
-                border: 2px solid transparent
+                background-color: transparent
+                color: $btn-color
+                border: 2px solid $btn-color
                 &:hover
-                    background-color: transparent
-                    color: $btn-color
-                    border: 2px solid $btn-color             
+                    color: $white
+                    background-color: $btn-color                 
             .close-btn
                 position: absolute
                 right: 0
@@ -90,6 +87,9 @@
                 border-style: none
                 padding: 3%
                 color: $main-color
+                &:hover
+                    color: $second-color
+                    cursor: pointer
             .modal-head-block
                 font: 500 1.4375rem $main-font
                 padding: 3% 2% 
@@ -112,21 +112,62 @@
                 margin-left: 10%
                 font: 600 1rem $second-font
                 text-transform: uppercase
-                padding: 10px 40px
-                color: $white
-                background-color: $btn-color
-                border: 2px solid transparent
+                padding: 10px 35px
+                color: $btn-color
+                background-color: transparent
+                border: 2px solid $btn-color
                 cursor: pointer
                 &:hover
-                    background-color: transparent
-                    color: $btn-color
-                    border: 2px solid $btn-color
+                    background-color: $btn-color
+                    color: $white                
         .service-description
+            p
+                font: bold 1.25rem $main-font
             .service-description-head
                 font: 500 1.4375rem $main-font
                 padding: 2% 5%
+            .toogler
+                background: transparent
+                position: relative
+                border-style: none
+                color: $main-color
+                margin-left: 35%
+                text-transform: uppercase
+                font: 600 0.875rem $main-font
+                &::before
+                    position: absolute
+                    content: ''
+                    width: 10px
+                    height: 14px
+                    margin-top: 3px
+                    border: 10px solid transparent
+                    border-top: 10px solid $main-color
+                    left: -25px
+                &:hover
+                    color: $second-color 
+                    &::before
+                        border: 10px solid transparent
+                        border-top: 10px solid $second-color
             li
-                font: 400 0.975rem $second-font
+                list-style: disc
+                margin-left: 2%
+                font: 400 1.125rem $second-font
                 line-height: 34px
         .sercive-picture
-            padding-left: 0
+            background-image: url(../img/service_pic_1.jpg)
+            background-size: cover
+            background-repeat: no-repeat
+            background-position-x: 70%
+            min-height: 600px
+        .activists-picture
+            background-image: url(../img/service_pic_2.jpg)
+            background-size: cover
+            background-repeat: no-repeat
+            background-position-x: 50%
+            min-height: 600px
+        .goverment-picture
+            background-image: url(../img/service_pic_3.jpg)
+            background-size: cover
+            background-repeat: no-repeat
+            background-position-x: 85%
+            min-height: 600px
