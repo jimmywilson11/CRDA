@@ -1,5 +1,5 @@
 @import url(../css/fonts.css);
-header {
+.header {
   background-color: #85241E;
 }
 
@@ -14,21 +14,13 @@ header {
 }
 
 .navbar {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  padding: 0 !important;
+  padding: 0;
 }
 
 .navbar .site-title-head {
   font: 500 1.125rem Montserrat Regular, sans-serif;
   line-height: 22px;
-}
-
-.navbar .navbar-collapse {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  color: #FFF;
 }
 
 .navbar .navbar-collapse .navbar-list .nav-item {
@@ -65,60 +57,78 @@ header {
   color: #FFF;
 }
 
-footer {
-  background-color: #3A2F2F;
+.navbar .languages .lang-item {
+  margin: 3px 0;
 }
 
-footer .contacts .contact-item i {
+.navbar .languages .lang-item a {
+  padding: 0;
+}
+
+footer {
+  background-color: #3A2F2F;
+  color: #FFF;
+}
+
+footer .footer-content .address {
+  -webkit-box-flex: 0.8;
+      -ms-flex-positive: 0.8;
+          flex-grow: 0.8;
+}
+
+footer .footer-content .address p {
+  font: 600 1.125rem Montserrat Regular, sans-serif;
+}
+
+footer .contact-wrapper .contacts .contact-item i {
   color: #FFDEDC;
   font-size: 20px;
 }
 
-footer .contacts .contact-item a {
+footer .contact-wrapper .contacts .contact-item a {
   text-decoration: none;
   color: #FFDEDC;
   font: 600 14px Open Sans Regular, sans-serif;
   opacity: .8;
 }
 
-footer .contacts .contact-item a:hover {
+footer .contact-wrapper .contacts .contact-item a:hover {
   opacity: 1;
 }
 
+footer .languages .lang-item {
+  margin: 3px 0;
+}
+
+footer .languages .lang-item:hover {
+  opacity: .8;
+}
+
+footer .languages .lang-item a {
+  padding: 0;
+}
+
 footer .color-wrapper {
-  color: #FFF;
   background-color: #423838;
 }
 
 footer .color-wrapper p {
-  font: 600 18px Montserrat Regular, sans-serif;
-  margin: 0;
-}
-
-footer .color-wrapper a {
-  text-decoration: none;
   color: #FFF;
-}
-
-footer .color-wrapper a img {
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
-}
-
-footer .address {
-  color: #FFF;
-}
-
-footer .address p {
   font: 600 1.125rem Montserrat Regular, sans-serif;
 }
 
 .container {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
 }
 
-h2 {
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.section-title {
   display: block;
   background-color: #FFF8F8;
   padding: 5px 0 5px 40px;
@@ -128,91 +138,47 @@ h2 {
   letter-spacing: 0.03em;
 }
 
-.description-wrapper {
-  padding-top: 4%;
-  margin-right: 0;
+#project-description .description-wrapper {
+  padding-top: 5%;
 }
 
-.description-wrapper .description-info h1 {
+#project-description .description-wrapper .description-info .banner-title {
   font: 600 1.75rem Montserrat Regular, sans-serif;
 }
 
-.description-wrapper .description-info h3 {
+#project-description .description-wrapper .description-info .founders-description {
   font: 600 1.125rem Montserrat Regular, sans-serif;
 }
 
-.description-wrapper .description-info h5 {
-  font: 600 1.125rem Montserrat Regular, sans-serif;
+#project-description .description-wrapper .description-info p {
+  font: 400 1.25rem Open Sans Regular, sans-serif;
+  line-height: 34px;
+  text-indent: 1.5rem;
 }
 
-.description-wrapper .description-info p {
-  font: 400 1rem Open Sans Regular, sans-serif;
-  line-height: 32px;
-  text-indent: 1rem;
-}
-
-.description-wrapper .description-info ul li {
-  margin: 10px 0;
+#project-description .description-wrapper .description-info .founders-list .founders-list-item {
+  margin: .75em 0;
   font: 400 1.25rem Open Sans Regular, sans-serif;
 }
 
-.description-wrapper .description-info .button {
-  display: inline-block;
-  text-decoration: none;
-  padding: 20px 40px;
-  font: 600 1.2rem Montserrat Regular, sans-serif;
-  line-height: 22px;
-  letter-spacing: 0.02em;
-  color: #FFF;
-  background-color: #FF8982;
-  border: 2px solid transparent;
-  opacity: .8;
-  border-radius: 0;
-  overflow: hidden;
-}
-
-.description-wrapper .description-info .button:hover {
-  color: #85241E;
-  border: 2px solid #85241E;
-  background-color: #FFF;
-}
-
-.description-wrapper .description-info .button:active {
-  color: #FFF;
-  background-color: #85241E;
-  opacity: .8;
-}
-
-#our-mission .mission-list {
-  padding: 30px 0;
-}
-
-#our-mission .mission-list .mission-item {
-  position: relative;
-  background-color: #F7F7F7;
-  margin: 0 10% 0 0;
-  -webkit-box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
-}
-
-#our-mission .mission-list .mission-item h3 {
+#our-mission .section-subtitle {
   font: 600 1.5rem Montserrat Regular, sans-serif;
 }
 
-#our-mission .mission-list .mission-item p {
+#our-mission .mission-description {
   font: 500 1rem Open Sans Regular, sans-serif;
   line-height: 34px;
-  text-indent: 16px;
+  text-indent: 1.5rem;
 }
 
-#our-team .team-item {
+#our-team .team-member {
   width: auto;
   height: auto;
   background: none;
   padding: 0 15px 0 0;
 }
 
-#our-team .team-item img {
+#our-team .team-member img {
   max-width: 200px;
   max-height: 200px;
   border-radius: 50%;
@@ -222,12 +188,12 @@ h2 {
           box-shadow: 6px 7px 25px 1px rgba(0, 0, 0, 0.45);
 }
 
-#our-team .team-item .title-wrapper h3 {
+#our-team .team-member .title-wrapper h3 {
   font: 600 1.4375rem Montserrat Regular, sans-serif;
   line-height: 32px;
 }
 
-#our-team .team-item .title-wrapper p {
+#our-team .team-member .title-wrapper p {
   font: 500 1rem Open Sans Regular, sans-serif;
   line-height: 34px;
   text-indent: 16px;
@@ -237,7 +203,7 @@ h2 {
 
 #our-direction {
   background-color: #ECECEC;
-  padding: 5% 0;
+  padding: 3% 0;
 }
 
 #our-direction .card-deck {
@@ -274,27 +240,70 @@ h2 {
 }
 
 #linguee {
-  padding: 5% 0;
+  padding: 3% 0;
 }
 
-#linguee .gray-color-wrapper {
-  background-color: #ECECEC;
+#linguee .linguee-description .linguee-list {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
 }
 
-#linguee .gray-color-wrapper h3 {
-  font: 600 1.4375rem Montserrat Regular, sans-serif;
-  padding: 3%;
+#linguee .linguee-description .linguee-list .linguee-list-item {
+  width: 230px;
 }
 
-#linguee .gray-color-wrapper p {
-  font: 500 1rem Open Sans Regular, sans-serif;
-  text-indent: 16px;
-  line-height: 34px;
-  padding: 0 1% 2% 3%;
-  margin-bottom: 0;
+#linguee .linguee-description .linguee-list .linguee-list-item img {
+  margin: 0 auto;
+  width: 180px;
+  height: 180px;
 }
 
-#linguee .linguee-list li {
-  font: 600 1.5rem Montserrat Regular, sans-serif;
-  margin: 6px;
+#linguee .linguee-description .linguee-list .linguee-list-item h3 {
+  padding-top: .3em;
+  font: bold 1.125rem Montserrat Regular, sans-serif;
+  position: relative;
+  display: inline-block;
+}
+
+#linguee .linguee-description .linguee-list .linguee-list-item h3::before {
+  display: block;
+  position: absolute;
+  content: '\2714';
+  width: 10px;
+  height: 10px;
+  left: -30px;
+}
+
+#linguee ul li {
+  margin: .5em 0;
+}
+
+#linguee ul li h3 {
+  font: bold 1.2rem Montserrat Regular, sans-serif;
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+#linguee ul li h3::before {
+  display: block;
+  position: absolute;
+  content: '\2714';
+  width: 10px;
+  height: 10px;
+  left: -30px;
+}
+
+#linguee ul li svg {
+  height: 64px;
+  width: 64px;
 }

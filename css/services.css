@@ -1,5 +1,5 @@
 @import url(../css/fonts.css);
-header {
+.header {
   background-color: #85241E;
 }
 
@@ -14,21 +14,13 @@ header {
 }
 
 .navbar {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  padding: 0 !important;
+  padding: 0;
 }
 
 .navbar .site-title-head {
   font: 500 1.125rem Montserrat Regular, sans-serif;
   line-height: 22px;
-}
-
-.navbar .navbar-collapse {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  color: #FFF;
 }
 
 .navbar .navbar-collapse .navbar-list .nav-item {
@@ -65,60 +57,78 @@ header {
   color: #FFF;
 }
 
-footer {
-  background-color: #3A2F2F;
+.navbar .languages .lang-item {
+  margin: 3px 0;
 }
 
-footer .contacts .contact-item i {
+.navbar .languages .lang-item a {
+  padding: 0;
+}
+
+footer {
+  background-color: #3A2F2F;
+  color: #FFF;
+}
+
+footer .footer-content .address {
+  -webkit-box-flex: 0.8;
+      -ms-flex-positive: 0.8;
+          flex-grow: 0.8;
+}
+
+footer .footer-content .address p {
+  font: 600 1.125rem Montserrat Regular, sans-serif;
+}
+
+footer .contact-wrapper .contacts .contact-item i {
   color: #FFDEDC;
   font-size: 20px;
 }
 
-footer .contacts .contact-item a {
+footer .contact-wrapper .contacts .contact-item a {
   text-decoration: none;
   color: #FFDEDC;
   font: 600 14px Open Sans Regular, sans-serif;
   opacity: .8;
 }
 
-footer .contacts .contact-item a:hover {
+footer .contact-wrapper .contacts .contact-item a:hover {
   opacity: 1;
 }
 
+footer .languages .lang-item {
+  margin: 3px 0;
+}
+
+footer .languages .lang-item:hover {
+  opacity: .8;
+}
+
+footer .languages .lang-item a {
+  padding: 0;
+}
+
 footer .color-wrapper {
-  color: #FFF;
   background-color: #423838;
 }
 
 footer .color-wrapper p {
-  font: 600 18px Montserrat Regular, sans-serif;
-  margin: 0;
-}
-
-footer .color-wrapper a {
-  text-decoration: none;
   color: #FFF;
-}
-
-footer .color-wrapper a img {
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
-}
-
-footer .address {
-  color: #FFF;
-}
-
-footer .address p {
   font: 600 1.125rem Montserrat Regular, sans-serif;
 }
 
 .container {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
 }
 
-h2 {
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.section-title {
   display: block;
   background-color: #FFF8F8;
   padding: 5px 0 5px 40px;
@@ -129,20 +139,19 @@ h2 {
 }
 
 #main {
-  padding: 5% 0;
+  padding: 3% 0;
 }
 
 #main .business, #main .goverment, #main .activists {
-  padding: 3% 0 0 0;
   margin: 2% 0;
-  background-color: #F7F7F7;
 }
 
 #main .business .business-contact, #main .goverment .business-contact, #main .activists .business-contact {
   -webkit-box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
-  padding: 0 3% 0 0;
-  height: 90%;
+  padding: 0 2em 0 0;
+  height: 45%;
+  background-color: #fff;
 }
 
 #main .business .business-contact .modal-dialog, #main .goverment .business-contact .modal-dialog, #main .activists .business-contact .modal-dialog {
@@ -287,7 +296,7 @@ h2 {
   margin-left: 10%;
   font: 600 1rem Open Sans Regular, sans-serif;
   text-transform: uppercase;
-  padding: 10px 40px;
+  padding: 10px 35px;
   color: #E8625A;
   background-color: transparent;
   border: 2px solid #E8625A;
@@ -297,6 +306,10 @@ h2 {
 #main .business .business-contact .modal-btn:hover, #main .goverment .business-contact .modal-btn:hover, #main .activists .business-contact .modal-btn:hover {
   background-color: #E8625A;
   color: #FFF;
+}
+
+#main .business .service-description p, #main .goverment .service-description p, #main .activists .service-description p {
+  font: bold 1.25rem Montserrat Regular, sans-serif;
 }
 
 #main .business .service-description .service-description-head, #main .goverment .service-description .service-description-head, #main .activists .service-description .service-description-head {
@@ -337,10 +350,30 @@ h2 {
 #main .business .service-description li, #main .goverment .service-description li, #main .activists .service-description li {
   list-style: disc;
   margin-left: 2%;
-  font: 400 0.975rem Open Sans Regular, sans-serif;
+  font: 400 1.125rem Open Sans Regular, sans-serif;
   line-height: 34px;
 }
 
 #main .business .sercive-picture, #main .goverment .sercive-picture, #main .activists .sercive-picture {
-  padding-left: 0;
+  background-image: url(../img/service_pic_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+  min-height: 600px;
+}
+
+#main .business .activists-picture, #main .goverment .activists-picture, #main .activists .activists-picture {
+  background-image: url(../img/service_pic_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  min-height: 600px;
+}
+
+#main .business .goverment-picture, #main .goverment .goverment-picture, #main .activists .goverment-picture {
+  background-image: url(../img/service_pic_3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 85%;
+  min-height: 600px;
 }

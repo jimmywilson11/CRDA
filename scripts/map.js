@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var setting = {
-        "height": 600,
-        "width": 800,
+        "height": 550,
+        "width": 1280,
         "zoom": 17,
         "queryString": "бульвар Шевченка, 185, Черкаси, Черкаська область, Україна, 18000",
         "place_id": "ChIJOWg4gX1L0UARfuAWeyA3jfI",

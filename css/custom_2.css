@@ -15,7 +15,7 @@
 .custom-inner:after  {
 	content: '';
 	width: 99%;
-	height: 50%;
+	height: 1px;
 	position: absolute;
 	background: #f6f6f6;
 	bottom: -4px;

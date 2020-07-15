@@ -1,4 +1,4 @@
-header
+.header
     background-color: $main-color
 .fixed
     position: fixed
@@ -8,13 +8,12 @@ header
     z-index: 10
     animation: .8s linear
 .navbar
-    flex-grow: 0
-    padding: 0 !important
+    padding: 0
     .site-title-head
         font: 500 1.125rem $main-font
         line-height: 22px
+        color: $white
     .navbar-collapse
-        flex-grow: 0 
         .navbar-list
             .nav-item
                 opacity: .6
@@ -39,3 +38,8 @@ header
                 &:hover
                     opacity: 1
                     color: $white
+    .languages
+        .lang-item
+            margin: 3px 0                 
+            a
+                padding: 0
